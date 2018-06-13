@@ -1,0 +1,12 @@
+Title: jQuery
+
+----
+
+Text: 
+
+This could be endless, but here's a few that I like.
+
+####Get everything inside an element
+```
+$(element).find('*');
+```
