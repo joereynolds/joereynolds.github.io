@@ -1,4 +1,6 @@
-Title: 10 minutes with K
+---
+layout: default
+---
 
 ----
 

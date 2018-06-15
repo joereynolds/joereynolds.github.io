@@ -1,4 +1,6 @@
-Title: Logical Steps
+---
+layout: default
+---
 
 ----
 

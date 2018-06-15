@@ -2,8 +2,6 @@
 layout: default
 ---
 
-Text: 
-
 I've recently started writing a CLI in Typescript to detect dead css,
 it's called [Mort](https://github.com/joereynolds/mort).
 (image: mort.gif)
@@ -75,7 +73,7 @@ const selectors = fileContents.split("\n").filter(selector => {
 const selectors = fileContents.split(/(\r\n|\n)/g).filter(selector => {
 ```
 
-Once you've written the code to fix the bug, run the tests (`npm test`)and they should pass.
+Once you've written the code to fix the bug, run the tests (`npm test`) and they should pass.
 
 (image: mort-testt.png)
 And that's it!

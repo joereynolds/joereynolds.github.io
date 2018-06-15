@@ -1,4 +1,6 @@
-Title: Maintainable CSS
+---
+layout: default
+---
 
 ----
 
