@@ -1,8 +1,6 @@
-Title: Superimposition
-
-----
-
-Text: 
+---
+layout: default
+---
 
 Superimposition is the process of layering one tonality on top of another to suggest an entirely different tonality. 
 

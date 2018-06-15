@@ -1,6 +1,6 @@
-Title: Mungladore
-
-----
+---
+layout: default
+---
 
 Text: 
 

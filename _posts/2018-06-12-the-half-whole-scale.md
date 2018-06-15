@@ -1,8 +1,6 @@
-Title: Half Whole Scale
-
-----
-
-Text: 
+---
+layout: default
+---
 
 The half-whole scale is perhaps one of my favourite scales for a few reasons.
 

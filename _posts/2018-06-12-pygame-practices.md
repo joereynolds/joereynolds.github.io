@@ -1,8 +1,6 @@
-Title: Pygame Best Practices
-
-----
-
-Text: 
+---
+layout: default
+---
 
 ## Intro
 

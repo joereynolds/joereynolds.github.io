@@ -1,8 +1,6 @@
-Title: Modular Inputs in Pygame
-
-----
-
-Text: 
+---
+layout: default
+---
 
 We'll be talking about modular inputs today, to me this means
 

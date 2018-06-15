@@ -1,10 +1,6 @@
-Title: Lets TDD a bug
-
-----
-
-Tags: programming
-
-----
+---
+layout: default
+---
 
 Text: 
 

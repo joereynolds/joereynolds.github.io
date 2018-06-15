@@ -1,8 +1,6 @@
-Title: Pentatonics
-
-----
-
-Text: 
+---
+layout: default
+---
 
 A pentatonic scale is a scale that consists of 5 notes. 
 

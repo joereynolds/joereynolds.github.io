@@ -1,10 +1,6 @@
-Title: Slimming down your .vimrc
-
-----
-
-Tags: 
-
-----
+---
+layout: default
+---
 
 Text: 
 

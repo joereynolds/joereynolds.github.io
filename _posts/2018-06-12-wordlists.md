@@ -1,8 +1,6 @@
-Title: Wordlists
-
-----
-
-Text: 
+---
+layout: default
+---
 
 I like words, I like lists, I like lists of words!
 

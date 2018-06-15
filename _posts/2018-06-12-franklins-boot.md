@@ -1,8 +1,6 @@
-Title: A Lightweight D6 RPG System
-
-----
-
-Text: 
+---
+layout: default
+---
 
 ##Franklins Boot
 

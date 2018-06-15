@@ -1,8 +1,6 @@
-Title: Significant Notes
-
-----
-
-Text: 
+---
+layout: default
+---
 
 The purpose of this article is to make you aware of what notes to omit from a chord if needed and how to tell what chord/scale is best suited over what harmony.
 
@@ -129,6 +127,3 @@ Hopefully this article has shed some light on systematically eliminating unsuita
 
 Now, go forth and improvise!
 
-----
-
-Tags: music

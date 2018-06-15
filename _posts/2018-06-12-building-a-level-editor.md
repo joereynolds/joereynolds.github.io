@@ -1,8 +1,6 @@
-Title: Building a Level Editor
-
-----
-
-Text: 
+---
+layout: default
+---
 
 Let's go over how to build a (basic) level editor. The editor should be able to 
 

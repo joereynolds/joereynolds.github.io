@@ -1,8 +1,6 @@
-Title: 'Undo' in Pygame
-
-----
-
-Text: 
+---
+layout: default
+---
 
 Today, I got well and truly nerd-sniped into creating a Bomberman-like puzzle game. Here's a very early (1 days work) gif to show you what's been implemented.
 

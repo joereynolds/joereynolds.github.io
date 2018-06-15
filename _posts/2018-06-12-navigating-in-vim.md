@@ -1,8 +1,6 @@
-Title: Navigating Code With (Neo)Vim
-
-----
-
-Text: 
+---
+layout: default
+---
 
 I use these to navigate huge codebases (1m+ lines)
 

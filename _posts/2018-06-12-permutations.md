@@ -1,8 +1,6 @@
-Title: Permutations
-
-----
-
-Text: 
+---
+layout: default
+---
 
 When we look at permutations, we are concerning ourselves with the different combinations a phrase can be played in. It might not seem immediately obvious to even try this but there is good reason to, it can reveal some phrases that you might have missed and perhaps force you to play something slightly out of your reach.
 

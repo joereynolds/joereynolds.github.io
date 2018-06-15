@@ -1,8 +1,6 @@
-Title: my shit jokes
-
-----
-
-Text: 
+---
+layout: default
+---
 
 - What's an Islamic English teachers favourite holiday?
     - Gramadan

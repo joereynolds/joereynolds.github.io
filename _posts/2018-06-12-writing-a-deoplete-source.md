@@ -1,8 +1,6 @@
-Title: Writing A Deoplete Source
-
-----
-
-Text: 
+---
+layout: default
+---
 
 [Deoplete](https://github.com/Shougo/deoplete.nvim) is a completion engine for [Neovim](https://github.com/neovim/neovim) and [Vim8](https://github.com/vim/vim).
 

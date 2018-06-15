@@ -1,8 +1,6 @@
-Title: How My Site Works
-
-----
-
-Text: 
+---
+layout: default
+---
 
 I just want to take a quick minute to talk about how this site works, what's going on underneath the hood and some other small bits
 

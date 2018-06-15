@@ -1,8 +1,6 @@
-Title: cmaj-ideas
-
-----
-
-Text: 
+---
+layout: default
+---
 
 Note that in the majority of cases,
 commands can be added to with a comma (,)

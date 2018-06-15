@@ -1,8 +1,6 @@
-Title: Optimising Vim
-
-----
-
-Text: 
+---
+layout: default
+---
 
 Sometimes Vim can slow down when you start to push it to being something more than just a text editor.
 These are some of the optimisations I've read/seen compiled into a handy list :D
