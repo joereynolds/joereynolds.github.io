@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: programming
 ---
 
 I've recently started writing a CLI in Typescript to detect dead css,

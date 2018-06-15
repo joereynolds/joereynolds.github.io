@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: todo
 ---
 
 The half-whole scale is perhaps one of my favourite scales for a few reasons.

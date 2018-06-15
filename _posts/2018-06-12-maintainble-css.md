@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: programming
 ---
 
 This article will glance over various ways of creating a design that you don't (or shouldn't) have to keep coming back to again and again to fix layout issues. 

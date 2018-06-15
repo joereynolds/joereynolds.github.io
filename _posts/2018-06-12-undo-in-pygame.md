@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: todo
 ---
 
 Today, I got well and truly nerd-sniped into creating a Bomberman-like puzzle game. Here's a very early (1 days work) gif to show you what's been implemented.

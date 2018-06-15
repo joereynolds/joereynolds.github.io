@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: programming
 ---
 
 I use these to navigate huge codebases (1m+ lines)

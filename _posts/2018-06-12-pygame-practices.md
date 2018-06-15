@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: programming
 ---
 
 ## Intro

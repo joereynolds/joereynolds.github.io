@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: todo
 ---
 
 I like words, I like lists, I like lists of words!

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: music
 ---
 
 Minorisation is a few things. Firstly, it is the belief that any key (major,minor or otherwise) can be 'converted to minor'. Secondly, it is the process of taking this belief and incorporating it into your playing.

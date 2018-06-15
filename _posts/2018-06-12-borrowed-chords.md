@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: music
 ---
 
 A borrowed chord is a chord that is 'borrowed' from the parallel key. That is to say, if we are composing a song in C major, then we would borrow chords from C minor. Whilst not a confusing topic, there are a few things to note that might speed up the process of learning past trial and error.

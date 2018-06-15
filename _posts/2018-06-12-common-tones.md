@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: music
 ---
 
 Many composers throughout the world and throughout the course of history have used common tones to provide a smoother link to chords or to give a smoother modulation to their compositions.

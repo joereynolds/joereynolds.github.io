@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: programming
 ---
 
 Sometimes Vim can slow down when you start to push it to being something more than just a text editor.

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+tags: todo
 ---
 
 Superimposition is the process of layering one tonality on top of another to suggest an entirely different tonality. 
