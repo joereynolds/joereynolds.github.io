@@ -218,7 +218,3 @@ Some simple sources I learned from:
 
 https://github.com/fszymanski/deoplete-emoji
 https://github.com/ozelentok/deoplete-gtags
-
-----
-
-Tags: programming

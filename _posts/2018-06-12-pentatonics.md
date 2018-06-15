@@ -183,7 +183,3 @@ Over D
 It's up to you to determine what you think is a suitable imposition. Just by looking at the above we can see that A minor over an F backing would yield a major sound due to the lack of flat tones whereas if we were to play the exact same scale but over a B backing, the effect would be the complete opposite. We would then be implying the b7 b2 b3 b6 and 4 of B which is essentially the phrygian mode.
 
 This can be taken in many different ways and for further reading on pentatonics I would recommend listening to traditional Japanese and Chinese music, these two tend to utilise these scales to a greater degree and with more variety than in western music.
-
-----
-
-Tags: music

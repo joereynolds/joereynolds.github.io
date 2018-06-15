@@ -46,7 +46,3 @@ bvi - The major chord
 This does not mean that you shouldn't try other combinations like incorporating the augmented chord on the III of the harmonic minor scale or the two diminished chords at VI and VII of the melodic minor. 
 
 Food for thought: Borrowing chords can lead to an easier and smoother way to modulate to a different key.
-
-----
-
-Tags: music

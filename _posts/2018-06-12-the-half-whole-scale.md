@@ -177,7 +177,3 @@ Sadly, our time must come to an end, I've got one last little treat that I recor
 
 Until next time
 p.s. I totally dig that jumper, my fashion sense is impeccable.
-
-----
-
-Tags: music

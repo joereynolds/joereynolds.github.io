@@ -2,8 +2,6 @@
 layout: default
 ---
 
-Text: 
-
 ## Intro
 
 I frequently purge my `init.vim` trying to get it smaller and smaller.  I like to rely on native vim.

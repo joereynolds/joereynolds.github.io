@@ -126,4 +126,3 @@ Considering all of the possibilities of scales-to-chords and chords-to-scales yo
 Hopefully this article has shed some light on systematically eliminating unsuitable chords and scales from your progressions.
 
 Now, go forth and improvise!
-

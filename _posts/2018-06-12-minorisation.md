@@ -2,10 +2,6 @@
 layout: default
 ---
 
-----
-
-Text: 
-
 Minorisation is a few things. Firstly, it is the belief that any key (major,minor or otherwise) can be 'converted to minor'. Secondly, it is the process of taking this belief and incorporating it into your playing.
 
 The great thing about minorisation is that it can be as simple or as complex as you like, it all depends on how far you're willing to delve into abstract thinking and conversion.
@@ -85,7 +81,3 @@ G7 = the notes G,B,D,F. D+F being the two notes that convert to Dm
 C = The relative major of A minor.
 
 Minorisation all round!
-
-----
-
-Tags: music

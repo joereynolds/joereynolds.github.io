@@ -2,10 +2,6 @@
 layout: default
 ---
 
-----
-
-Text: 
-
 This article will glance over various ways of creating a design that you don't (or shouldn't) have to keep coming back to again and again to fix layout issues. 
 
 #1. Be consistent with margins
@@ -266,7 +262,3 @@ Thank you for pointing this out, that was an oversight on my part. I've updated 
 > http://getbem.com/
 
 True, bem solves a lot of these problems but they won't all be solved by bem. Consistency and using HTML5 is just general good advice regardless of your CSS methodology
-
-----
-
-Tags: programming

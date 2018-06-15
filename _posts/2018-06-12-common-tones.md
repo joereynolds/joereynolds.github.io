@@ -58,7 +58,3 @@ We can see that there is a common tone (although it is an enharmonic equivalent)
 The reason this works so well is because of the previously mentioned 'familiar effect'. The common tone provides a nice link to the rest of the progression whilst the foreign tones provide a sense of movement.
 
 The whole purpose of this exercise is to provide a common link to an uncommon sound. It is greatly recommended that you go for unusual and striking progressions just to familiarise yourself with its use.
-
-----
-
-Tags: music

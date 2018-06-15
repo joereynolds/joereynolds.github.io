@@ -225,7 +225,3 @@ Here are some decent resources I recommend. Some won't be Pygame, or even Python
 - (link:https://github.com/joereynolds/Mr-Figs text:Mr Figs) - The repo to Mr Figs.
 - (link:http://gameprogrammingpatterns.com/contents.html text:Game Programming Patterns) - A book on some design patterns particularly suitable for game development
 - (link:https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller text:MVC) - Wikipedia's definition of MVC. i.e. the logic/view stuff I was going on about
-
-----
-
-Tags: programming

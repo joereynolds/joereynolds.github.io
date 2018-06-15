@@ -121,7 +121,3 @@ It should be noted: A retrograde inversion can again, be true or diatonic.
 And as a final note, remember **moderation**:
 
 With one chord (Major7) we can see the possibilities and potential of these devices , with an entire scale or indeed all 12 tones, it begins to get unwieldy. A traditional major scale would have over 5,000 different variants!
-
-----
-
-Tags: music

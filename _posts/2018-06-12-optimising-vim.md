@@ -81,7 +81,3 @@ A lot of this was pieced from various Reddit and StackOverflow posts.
 Here are the ones I could find:
 
 https://stackoverflow.com/questions/12213597/how-to-see-which-plugins-are-making-vim-slow
-
-----
-
-Tags: programming

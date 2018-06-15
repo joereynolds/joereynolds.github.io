@@ -77,7 +77,3 @@ self.move(keys.opposites[self.move_stack.pop()]) #undo
 The player then happily goes about doing the reverse of our actions!
 
 #Happy Pygaming :D
-
-----
-
-Tags: programming

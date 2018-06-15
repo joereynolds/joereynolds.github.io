@@ -130,7 +130,3 @@ Before I finish off, let me just give you a few more possible useful superimposi
 
 
 There are many more possibilities, and this is more than enough to get you started in the wonderful world of imposing stuff on top of stuff to gain stuff. If you come across any majestically beautiful impositions, let me know! E-mail me some of your favourites, I love to nerd over music :D
-
-----
-
-Tags: music

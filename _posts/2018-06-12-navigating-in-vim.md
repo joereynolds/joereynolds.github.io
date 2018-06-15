@@ -91,7 +91,3 @@ You can do a plain ol' Grep
 `gf` will open the file under the cursor.
 `gx` will open the url under the cursor.
 <script type="text/javascript" src="https://asciinema.org/a/xf301nU4ke78Ry1NCv1a3zzYn.js" id="asciicast-xf301nU4ke78Ry1NCv1a3zzYn" async></script>
-
-----
-
-Tags: programming
