@@ -11,27 +11,27 @@ In order for us to emphasise what mode we are in, it is imperative that we empha
 
 A character tone is basically the one note that 'defines' that mode (Lydian has #4, Locrian has b5 etc...). I'll summarise the modes below, placing a '*' by the important interval of that mode: -
  
-####Dorian        
+#### Dorian        
 
 1  | 2  | b3    | 4 |  5 |  6*  |  b7    
 ---|----|-----|----|--|----|----
 
-####Phrygian      
+#### Phrygian      
 
 1  | b2*  | b3    | 4 |  5 |  b6  |  b7    
 ---|----|-----|----|--|----|----
 
-####Lydian      
+#### Lydian      
 
 1  | 2  | 3    | #4* |  5 |  6  |  7    
 ---|----|-----|----|--|----|----
     
-####Mixolydian    
+#### Mixolydian    
 
 1  | 2  | 3    | 4 |  5 |  6  |  b7*    
 ---|----|-----|----|--|----|----
 
-####Locrian  
+#### Locrian  
 
 1  | b2  | b3    | 4 |  b5* |  b6  |  b7    
 ---|----|-----|----|--|----|----
@@ -41,7 +41,7 @@ Note the exclusion of the Ionian(Major scale) and Aeolian(Minor scale) modes. Th
 
 So then, from the above, we can easily discern the most 'characteristic' of each mode. Let us use the phrygian mode for the continuation of our example.
 
-##Phrygian or GTFO
+## Phrygian or GTFO
 
 If we were to begin writing melody OR harmony (or both) then we should consciously try and incorporate the b2(Phrygian's character tone), if we do not incorporate this interval often, you will find the progression/melody gradually slipping back into the respective minor/major scale it is in.
 
@@ -68,13 +68,13 @@ The name of a chord that features the character tone in the chord itself is know
 Therefore, in E Phrygian, the following are all primary chords:
 
 
-####E minor 
+#### E minor 
 This is the root chord.
 
-####F major  
+#### F major  
 This chord is built off of the b2 and is immediately recognised as 'phrygian'.
 
-####D minor 
+#### D minor 
 This chord is the vii of E phrygian and contains the b2 also.
 
 So, to emphasise the Phrygian mode, we could perhaps have a harmonic progression  such as;
@@ -101,7 +101,7 @@ Whilst they do not possess the phrygian 'flavour' they can still be treated as p
 
 Melody wise, incorporating modal characteristics is not difficult at all. We just have to adhere to the mode we are in, we should be doing this anyway.
 
-#Conclusion
+# Conclusion
 
 Hopefully this article has proved insightful for those who wish to experiment modes and I also hope that you'll get a bit more mileage out of your modes from now on.
 

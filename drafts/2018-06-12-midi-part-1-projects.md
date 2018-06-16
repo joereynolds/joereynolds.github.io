@@ -257,7 +257,7 @@ The MIDI file with a track count greater than 1 coincides with the correct forma
 
 I think that's all for now, we've covered quite a lot, but at the same time only scratched the surfac, stay tuned for part 2!
 
-##Further Reading
+## Further Reading
 
 <http://www.midi.org/store/docsales.php>
 <http://midi.mathewvp.com/aboutMidi.htm>

@@ -8,7 +8,7 @@ I have an idea for a task management program it could be cloud or software based
 
 The user enters a sentence/phrase which is then parsed by the program and it will give an estimated time for completion and will tell you (based on things) whether you should do it now or not.
 
-##Sample Input
+## Sample Input
 
 Here is an example of what could be inputted into the program
 
@@ -31,11 +31,11 @@ The length of time an objective would take to complete is based upon the informa
 
 Once a user has entered there activity. It should be stored with all of their other activities and made into either a tree based structure, or a pie chart or something.
 
-####Should they do it now?
+#### Should they do it now?
 
 Based on the calulation, it will prioritize tasks to the conventions of most time management ideas i.e. If something can be done in 2 minutes or less, do it immediately.
 
-##Output
+## Output
 
 The output should be a complete analysis of the activity
 

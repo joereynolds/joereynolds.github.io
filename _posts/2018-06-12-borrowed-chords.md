@@ -19,18 +19,18 @@ Key
 m = Minor, M = Major
 o = Diminished, += Augmented
 
-####Natural
+#### Natural
 
 A  | B  | C    | D     | E     | F       | G
 ---|----|-----|------|------|------|--
 m|  o   | M   | m   | m     | M    |M
 
-####Melodic
+#### Melodic
 A  | B  | C    | D     | E     | F#       | G#
 ---|----|-----|------|------|------|--
 m|  M   | +   | M   | M     | o    |o
 
-####Harmonic
+#### Harmonic
 A  | B  | C    | D     | E     | F       | G#
 ---|----|-----|------|------|------|--
 m|  o   | +   | m   | M     | M    |o

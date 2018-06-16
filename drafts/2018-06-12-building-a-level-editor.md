@@ -43,7 +43,7 @@ class Editor():
     def make_level(self):
         """Appends our Tile objects to  our created_level sprite group"""
         print(self.level_data)
-        #Go through each individual tile and check it against our tiles dict
+        # Go through each individual tile and check it against our tiles dict
         for y, tiles in enumerate(self.level_data):
             for x, _tile in enumerate(tiles):
                 for tile_icon, attributes in Editor.tiles.items():
@@ -132,7 +132,7 @@ All that's left to tackle now, is big momma, the cream of the crop, the boss, yo
 ```
     def make_level(self):
         """Appends our Tile objects to  our created_level sprite group"""
-        #Go through each individual tile and check it against our tiles dict
+        # Go through each individual tile and check it against our tiles dict
         for y, tiles in enumerate(self.level_data):
             for x, _tile in enumerate(tiles):
                 for tile_icon, attributes in Editor.tiles.items():
@@ -183,4 +183,4 @@ I know it's been a bit of a whirlwind and I apologise for the few amounts of cus
 
 Let me know if you have questions!
 
-#Go forth and create!
+# Go forth and create!

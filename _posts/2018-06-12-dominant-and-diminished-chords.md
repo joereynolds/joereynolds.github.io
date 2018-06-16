@@ -11,7 +11,7 @@ Let's take our simple V in C (G7)
 
 It's chord tones are
 
-####G7
+#### G7
 
 G  | B  | D    | F    
 ---|----|-----|----
@@ -19,7 +19,7 @@ G  | B  | D    | F
 
 by moving the root of this G7 (G) up a semi-tone, we would get an Ab diminished chord
 
-####Abdim
+#### Abdim
 
 Ab  | B  | D    | F    
 ---|----|-----|----
@@ -29,25 +29,25 @@ Since we can now form a diminished 7 from somewhere we couldn't before, it also 
 
 A diminished chord has the same notes wherever you move it if you move it by a minor third. That means that no damage is done by going up 50000 minor thirds, you're still playing the same notes!
 
-####Abdim
+#### Abdim
 
 Ab  | B  | D    | F    
 ---|----|-----|----
 1|  b3   | b5   | bb7  
 
-####Bdim
+#### Bdim
 
 B  | D  | F    | Ab    
 ---|----|-----|----
 1|  b3   | b5   | bb7  
 
-####Ddim
+#### Ddim
 
 D  | F  | Ab    | B    
 ---|----|-----|----
 1|  b3   | b5   | bb7  
 
-####Fdim 
+#### Fdim 
 
 F  | Ab  | B    | D    
 ---|----|-----|----
@@ -72,19 +72,19 @@ And then we move to our V chord (G7). We play this G7 in its second inversion (w
 
 We then raise the G in our G7 up a semi-tone. 
 
-####From
+#### From
 
 D  | G  | B    | F    
 ---|----|-----|----
 
-####To
+#### To
 
 D | Ab  | B    | F    
 ---|----|-----|----
 
 Knowing that it is safe to move up or down by a minor third, we do just that and move down to a B diminished chord 
 
-####To 
+#### To 
 
 B | F  | G#    | D    
 ---|----|-----|----
@@ -104,7 +104,7 @@ On the B diminished, we could have gone to many different places other than the 
 
 Here's the original chord
 
-####B dim
+#### B dim
 
 B | D  | F    | G   
 ---|----|-----|----
@@ -114,21 +114,21 @@ And here're a few options
 
 - Flattening the 'B'
 
-####Bb7
+#### Bb7
 Bb | D  | F    | Ab    
 ---|----|-----|----
 
 
 - Flattening the 'F' as previously done
 
-####E7
+#### E7
 
 B | D  | E#    | G    
 ---|----|-----|----
 
 - Flattening the 'D'
 
-####C#7
+#### C#7
 
 B | F  | G#    | C#    
 ---|----|-----|----
@@ -136,10 +136,10 @@ B | F  | G#    | C#
 
 - Flattening the Ab/G#
 
-####G7
+#### G7
 
 B | F  | G    | D    
 ---|----|-----|----
 
-#Conclusion
+# Conclusion
 We've only really scraped the surface of the dominant/diminished relationships but hopefully this will give you a few ideas the next time you encounter either of those chords.

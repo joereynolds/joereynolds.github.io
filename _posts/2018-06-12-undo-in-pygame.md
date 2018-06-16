@@ -9,7 +9,7 @@ Today, I got well and truly nerd-sniped into creating a Bomberman-like puzzle ga
 
 In that video I've included the topic of this talk...Undo functionality!
 
-##It's actually pretty simple
+## It's actually pretty simple
 
 Atleast, it's way simpler than I thought. Here are the parts you need to see to get an idea of how it works.
 
@@ -52,7 +52,7 @@ opposites = {'up':'down',
              'right':'left'} 
 ```
 
-##How it all works
+## How it all works
 
 Firstly, a player enters a command and this calls the players update method,
 The players update method is just
@@ -77,4 +77,4 @@ self.move(keys.opposites[self.move_stack.pop()]) #undo
 
 The player then happily goes about doing the reverse of our actions!
 
-#Happy Pygaming :D
+# Happy Pygaming :D

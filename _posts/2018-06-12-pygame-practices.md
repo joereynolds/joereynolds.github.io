@@ -12,9 +12,9 @@ This article hopes to highlight a few decent practices that all pygamers should 
 Some of this stuff will be basic and obvious, but we'll quickly ramp up.
 
 *most examples have been taken from my newest game (link:https://github.com/joereynolds/Mr-Figs/ text:mr-figs), a turn-based puzzle-game based on Bomberman.*
-##Stuff you should be doing
+## Stuff you should be doing
 
-####Inheriting from pygame.sprite.Sprite
+#### Inheriting from pygame.sprite.Sprite
 
 I've seen several codebases that roll their own sprite system but there's a basic one built (link:https://www.pygame.org/docs/ref/sprite.html text:right into pygame!)
 inheriting from it gives you access to...
@@ -29,7 +29,7 @@ class Actor(pygame.sprite.Sprite):
 ```
 Do it.
 
-####Using rects with your sprites
+#### Using rects with your sprites
 
 Sprites aren't nearly as useful if you don't use (link:https://www.pygame.org/docs/ref/rect.html text:rects). Pygame's rects allow for collision detection, resizing, growing/shrinking, clamping, and a few other nice to haves.
 
@@ -43,7 +43,7 @@ class MySprite(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 ```
 
-####Using sprite groups (and layered updates)
+#### Using sprite groups (and layered updates)
 
 Sprites groups are exactly that, a grouping of sprites. Rather than keeping track of each individual sprite you can group them logically.
 
@@ -58,7 +58,7 @@ for enemy in my_enemy_array:
 ```
 I don't use groups too liberally personally. I mean, I *only* use sprite groups, but I don't go crazy with 10 + different groups. I usually have a Sprite Group per level.
 
-####Convert()ing surfaces
+#### Convert()ing surfaces
 The Pygame docs even say it themselves
 ```
 This [convert()] is always the fastest format for blitting. 
@@ -72,9 +72,9 @@ Or if you need alpha transparency
 ```
 self.image = pygame.Surface([50,50]).convert_alpha()
 ```
-####Learning the tools of the trade
+#### Learning the tools of the trade
 
-#####Tiled
+##### Tiled
 (image: http://www.mapeditor.org/img/tiled-logo-white.png link: http://www.mapeditor.org/)
 Take the time to research some decent tools that might be available before you embark on your game.
 There's one tool I swear by, and that's (link:http://www.mapeditor.org/ text:Tiled). Tiled is a map editor for 2d games and the levels get exported to program neutral data formats so it doesn't matter what language you program in, Tiled *will* work for you.
@@ -94,7 +94,7 @@ Going through the map
 ```
 for layer in tmxdata:
     for tile in layer.tiles():
-        #do stuff with your tiles
+        # do stuff with your tiles
 ```
 Accessing custom properties
 ```
@@ -104,7 +104,7 @@ for layer in tmxdata:
             #collision handling!
 ```
 
-#####Pylint
+##### Pylint
 (image:http://www.pylint.org/pylint4.svg link:http://www.pylint.org)
 A linter is a program that spots code smells in your code. It looks for things like
 - lines that are too long
@@ -128,7 +128,7 @@ All that says, is when we write to the file (BufWritePost), on a python file (*.
 
 You get a whoooole load of info back from pylint so you may want to supply it some arguments so that it gives you a bit less information.
 
-####Thinking granularly
+#### Thinking granularly
 The more granular your code is,  the less intertwined it is with everything else.
 
 Here's a snippet of code to show you what I mean:
@@ -144,7 +144,7 @@ Doing this, if I decide ( for some reason ) to be able to control 5 players all 
 I don't have to write collision and input logic all over again for a very similar use case.
 You'll find that the more granular you go, generally, the more maintainable the codebase will become.
 
-####Separate your views from your logic
+#### Separate your views from your logic
 
 This is something that I've taken from the web world. It makes the entire process a lot easier. Not only does it split up the domains, it also allows someone else to work on one part of your code whilst you work on another.
 
@@ -195,7 +195,7 @@ I will also say (again...heh) that Tiled is great at removing display informatio
 Whilst not Pygame related, config files are a great way to keep important information accessible to all of your program. The only important thing to do here is to not put unnecessary information in your file. Here's what the config file for mr-figs looks like
 ```
 """Global configuration options for the game"""
-#Directories
+# Directories
 spritesheet_location = '../data/newtiledsheet.png'
 layout_location = 'scenes\layouts\\'
 level_location = '..\\levels\\tmx\\'
@@ -212,7 +212,7 @@ Those sort of things should go in their related classes.
 
 If you really wanted to take it further with your config file, you could separate it out into a readable YAML or TXT file so that non-pythonistas can read and understand it too.
 
-####Reading the docs.
+#### Reading the docs.
 
 There are some good gems in (link:https://www.pygame.org/docs/ text:Pygame's documentation), that you may be unaware of if you only follow tutorials. One of my favourites is the transform module which allows for scale and rotation of sprites. 
 

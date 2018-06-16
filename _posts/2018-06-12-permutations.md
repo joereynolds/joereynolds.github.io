@@ -76,17 +76,17 @@ If you know your interval inversion, then diatonic inversion should be a slightl
 
 Now we will take a look at True inversion...
 
-###True Inversion
+### True Inversion
 
 True inversion is exactly the same as diatonic inversion except that is non-diatonic. Using the same example as above will easily show what I mean.
 
-####Original Set
+#### Original Set
 1  | 3  | 5    | 6   
 ---|----|-----|-----
 C|  E   | G   | A  
 
 
-####Diatonic inversion
+#### Diatonic inversion
 1  | 6  | 4    | 3   
 ---|----|-----|-----
 C|  A   | F   | E

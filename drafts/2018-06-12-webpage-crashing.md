@@ -11,7 +11,7 @@ In particular, (link:http://blogs.adobe.com/webplatform/2014/03/18/css-animation
 Hopefully this tip will save you the days it took me to find the answer.
 
 
-##Read More
+## Read More
 
 (link: https://github.com/woothemes/FlexSlider/issues/727 text: FlexSlider Issues)
 (link: http://stackoverflow.com/questions/15987787/my-website-crashes-safari-both-desktop-and-ios-consistently text: Safari crashes on iOS and desktop)

@@ -70,8 +70,8 @@ This is the code we'll use for any midi file we want to use. I'm using Python 3.
 Let's try these methods out on a file to see if it worked.
 
 ```
->>> midi_file = Midi('ff91.mid')  #Creating the MIDI object
->>> midi_file.mthd_chunk()        #Getting the MThd header and chunk
+>>> midi_file = Midi('ff91.mid')  # Creating the MIDI object
+>>> midi_file.mthd_chunk()        # Getting the MThd header and chunk
 b'MThd\x00\x00\x00\x06\x00\x01\x00\x11\x00\xc0'
 ```
 
@@ -261,7 +261,7 @@ The MIDI file with a track count greater than 1 coincides with the correct forma
 
 I think that's all for now, we've covered quite a lot, but at the same time only scratched the surfac, stay tuned for part 2!
 
-##Further Reading
+## Further Reading
 
 <http://www.midi.org/store/docsales.php>
 <http://midi.mathewvp.com/aboutMidi.htm>

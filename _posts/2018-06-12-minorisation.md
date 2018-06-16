@@ -38,7 +38,7 @@ D  | F  | A    | B
 -- -|----|-----|------
 |  1 | b3  | 5   | 6
 
-##Taking it further
+## Taking it further
 Once again though, the possibilities do not stop there. I'll take us a bit further away from triads and small extended chords. For those who find chord construction slightly confusing or daunting, this next section may be a bit confusing but I can assure you, it's easier than it seems.
 
 Let us now take an altered dominant as our next chord for 'minorisation'.

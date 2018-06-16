@@ -65,7 +65,7 @@ We get a scale that is suitable for not only major playing but also suits the do
 Being able to understand what scale works with what key is absolutely necessary for music and I have written an article explaining all of this here.
 
 
-##Other scales
+## Other scales
 
 Okay, now that we have exhausted the basic penatonics, it is time to consider completely different scales.
 
@@ -89,7 +89,7 @@ This is a much more extreme example and resembles something close to the 2nd mod
 
 There are many pentatonic scales around and I can't cover them all but hopefully the above example has whetted your appetite and made you understand the merit of omitting notes.
 
-##Superimposing the pentatonic scale
+## Superimposing the pentatonic scale
 
 There are other less obvious ways to get more mileage out of pentatonic scales aside from just playing the scale over a static backing. For instance, if we consider the concept of (link: http://localhost/kirby-2.0.5/Music/Theory/superimposition text: superimposition), then we can see many other possibilities for just this one scale.
 

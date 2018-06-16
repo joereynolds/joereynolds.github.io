@@ -20,19 +20,19 @@ url_html =  urllib.request.urlopen(url).read().decode('utf-8')
 soup = BeautifulSoup(url_html)
 ```
 
-####Finding all links on a page
+#### Finding all links on a page
 ```
 links = soup.find_all('a')
 ```
 
-####Getting a specific attribute of an HTML element
+#### Getting a specific attribute of an HTML element
 ```
 links = soup.find_all('a')
 
 for link in links:
     title = str(link.get('title'))
 ```
-####View all attributes of an element
+#### View all attributes of an element
 ```
 tables = soup.find_all('table')
 

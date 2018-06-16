@@ -8,7 +8,7 @@ Text:
 
 Logical Steps is a game I have in mind where a user is  greeted with a maze and their character, and must all in one move, say the moves required to get to the next level. It's not designed to be good, just frustrating ( :3 )
 
-##How it works
+## How it works
 
 The user presses a direction (up, down, left, or right) and the player will move in that direction until it hits a solid object.
 
