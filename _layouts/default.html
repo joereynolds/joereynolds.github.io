@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<title>Joe Reynolds Audio</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="alternate" type="application/atom+xml" href="/feed/"/>
-<link rel="stylesheet" href="/assets/css/style.css"/>
-
-<header class="header cf" role="banner">
-    <nav role="navigation">
-        <a class="active" href="https://joereynoldsaudio.com">Articles</a>
-        <a href="https://joereynoldsaudio.com/music">Music</a>
-    </nav>
-</header>
+{% include head.html %}
+{% include header.html %}
 
 <main>
 
@@ -19,35 +8,28 @@
 
 </main>
 
-<footer>
-    <a href="#">Github</a>
-    <a href="#">Opengameart</a>
-    <a href="#">Twitter</a>
-    <a href="#">Instagram</a>
-    <a href="#">Bogans</a>
-</footer>
-
+{% include footer.html %}
 <script>
-    //fuzzy finding for articles
-    var filterInput = document.getElementById('filter');
+//fuzzy finding for articles
+var filterInput = document.getElementById('filter');
 var articles = document.querySelectorAll('.article');
 
 filterInput.addEventListener('keyup', filter);
 
 function filter() {
-    var inputText = filterInput.value.toLowerCase();
+var inputText = filterInput.value.toLowerCase();
 
-    articles.forEach(function(article) {
-        //If nothing is entered in our input box, show everything
-        if (inputText.length === 0) {
-            article.style.display = 'block';
-        } else {
-            var text = article.innerText.toLowerCase();
-            if (text.indexOf(filterInput.value.toLowerCase()) === -1) {
-                article.style.display = 'none';
-            }
-        }
-    });
+articles.forEach(function(article) {
+//If nothing is entered in our input box, show everything
+if (inputText.length === 0) {
+article.style.display = 'block';
+} else {
+var text = article.innerText.toLowerCase();
+if (text.indexOf(filterInput.value.toLowerCase()) === -1) {
+article.style.display = 'none';
+}
+}
+});
 }
 </script>
 
