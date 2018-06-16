@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: todo
+tags: misc
 ---
 
 I like words, I like lists, I like lists of words!

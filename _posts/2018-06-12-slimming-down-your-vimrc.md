@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: todo
+tags: programming
 ---
 
 ## Intro

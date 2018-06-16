@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: todo
+tags: music
 ---
 
 The half-whole scale is perhaps one of my favourite scales for a few reasons.
