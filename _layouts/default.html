@@ -10,26 +10,26 @@
 
 {% include footer.html %}
 <script>
-//fuzzy finding for articles
-var filterInput = document.getElementById('filter');
+    //fuzzy finding for articles
+    var filterInput = document.getElementById('filter');
 var articles = document.querySelectorAll('.article');
 
 filterInput.addEventListener('keyup', filter);
 
 function filter() {
-var inputText = filterInput.value.toLowerCase();
+    var inputText = filterInput.value.toLowerCase();
 
-articles.forEach(function(article) {
-//If nothing is entered in our input box, show everything
-if (inputText.length === 0) {
-article.style.display = 'block';
-} else {
-var text = article.innerText.toLowerCase();
-if (text.indexOf(filterInput.value.toLowerCase()) === -1) {
-article.style.display = 'none';
-}
-}
-});
+    articles.forEach(function(article) {
+        //If nothing is entered in our input box, show everything
+        if (inputText.length === 0) {
+            article.style.display = 'block';
+        } else {
+            var text = article.innerText.toLowerCase();
+            if (text.indexOf(filterInput.value.toLowerCase()) === -1) {
+                article.style.display = 'none';
+            }
+        }
+    });
 }
 </script>
 
