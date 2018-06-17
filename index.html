@@ -8,7 +8,7 @@ layout: home
         <a href="{{ post.url }}">{{ post.title }}</a> 
         <span class="article-information">
             <small>{{ post.date | date_to_string }}</small>
-            <a class="article-tag">{{ post.tags }}</a>
+            <a href="/tags/{{ post.tags }}" class="article-tag">{{ post.tags }}</a>
         </span>
     </div>
     {% endfor %}
