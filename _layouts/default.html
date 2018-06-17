@@ -1,35 +1,12 @@
 {% include head.html %}
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 {% include header.html %}
 
 <main>
-
-<input placeholder="Search articles" type="text" id="filter">
 {{ content }}
-
 </main>
 
 {% include footer.html %}
-<script>
-    //fuzzy finding for articles
-    var filterInput = document.getElementById('filter');
-var articles = document.querySelectorAll('.article');
-
-filterInput.addEventListener('keyup', filter);
-
-function filter() {
-    var inputText = filterInput.value.toLowerCase();
-
-    articles.forEach(function(article) {
-        //If nothing is entered in our input box, show everything
-        if (inputText.length === 0) {
-            article.style.display = 'block';
-        } else {
-            var text = article.innerText.toLowerCase();
-            if (text.indexOf(filterInput.value.toLowerCase()) === -1) {
-                article.style.display = 'none';
-            }
-        }
-    });
-}
-</script>
-
