@@ -62,8 +62,6 @@ html {
   height: 100%;
   color: #222;
   font-family: "Source Sans Pro", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -107,8 +105,7 @@ td{
   text-align:center;
 }
 
-/* Header
--------------------------------------------------- */
+/* Header -------------------------------------------------- */
 header {
   border-bottom: 2px solid red;
   margin-bottom: 1.5em;
@@ -117,23 +114,21 @@ header {
 header a {
   color: #222;
   font-weight: 600;
+  margin-right: 15px;
 }
 
 header a:hover {
   text-decoration: none;
 }
 
-/* Headings
--------------------------------------------------- */
+/* Headings -------------------------------------------------- */
 h1, h2 {
   line-height: 1.25em;
   font-weight: 400;
   margin-bottom: .5em;
 }
 
-/* Main
--------------------------------------------------- */
-
+/* Main -------------------------------------------------- */
 main p,
 main ul,
 main ol {
@@ -153,9 +148,7 @@ main a:hover {
   margin-left: 1em;
 }
 
-/* Articlelist
- * --------------------------------------------*/
-
+/* Articlelist --------------------------------------------*/
 #filter {
     padding: 5px;
     border: 2px solid #ddd;
