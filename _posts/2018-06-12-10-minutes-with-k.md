@@ -1,7 +1,6 @@
 ---
 layout: default
 tags: programming
-redirect_from: "/home/minutes-with-k"
 ---
 
 # What is K/Kona?

@@ -14,19 +14,16 @@ Most diminished passages can and are repeated up a minor 3rd. Motif cycling is t
 For example we could play the first 5 notes in a C major scale
 
 C |D |E |F |G
---|--|--|--|
 
 And cycle this pattern of intervals up in major thirds
 
 1st cycle
 
 E   | F#  | G#    | A | B     
- ----|----|-------|------
 
 2nd cycle
 
 Ab   | Bb  | C    | Db | Eb     
- ----|----|-------|------
 
 As you can see, just from two cycles, we are in unknown territory. It often has a slightly jarring effect depending on the intervals you choose but it is always an interesting thing to 'throw off' the listener.
 
