@@ -1,6 +1,6 @@
 # You (probably) don't need Vimwiki
 
-Why are you using [vimwiki](https://github.com/vimwiki/vimwiki)?
+Why are you using [Vimwiki](https://github.com/vimwiki/vimwiki)?
 
 Probably to make notes, right?
 
@@ -8,17 +8,15 @@ Well did you know that you don't need a plugin for this?
 
 Of course you did!
 
-Let's go through some of Vimwiki's features and dispel them in places of vim alternatives.
+Let's go through some of Vimwiki's features and dispel them in place of vim alternatives.
 
-Vimwiki states the following features   
+Vimwiki states the following features:
 
 ##### 1. Organise notes and ideas
 
-TODO - weird phrasing
-It's understandable vimwiki boasts this feature, when I used to use vimwiki, I loved the linking and referencing all over the place, 
-but I have two letters for you; `gf`.
+ When I used to use Vimwiki, I loved the ability to link files to each other but I have two letters for you; `gf`.
 
-`gf` allows you to edit the file under the cursor (assuming it's in your path).
+`gf` allows you to edit the file under the cursor (assuming it's in your path). (see `:help gf`)
 
 With a sensible directory structure, you can easily organise your notes and ideas.
 
@@ -53,30 +51,39 @@ our main page, `index.md`.
 
 From here, you can easily browser articles by pressing `gf` to edit the file your cursor is on.
 
-From there, I usually use the jumplist (`<c-o>`, `<c-i>`, see `:help jumplist` for more) to go back and forth
+I usually use the jumplist (`<c-o>`, `<c-i>`, see `:help jumplist` for more) to go back and forth
 between the article and index page.
-
-The only thing that Vimwiki has over vanilla vim at this point is that with Vimwiki you can name the links, but
-a well-named file would serve that purpose too.
 
 ##### 2. Manage todo lists
 
-I don't really understand this one. In my eyes, a todo is just a text file, so you can 
-manage that how you want.
+I am a big todo list fan and mine are constantly changing. So much so that having them in a versioned text  
+file would be impractical, for this I use Google Keep.
+
+If you're adamant on using Vim, I like a good old fashioned bulleted list and nothing more.
+
+```
+# TODO  
+- Pay bills
+- Write "You don't need Vimwiki article"
+```
+
+To me though, this just sounds awkward.
 
 ##### 3. Write documentation
 
 There are two thoughts that go through my mind with this one:
 
-1) You can easily write documentation in any editor, I'm not sure what vimwiki brings to the table here (TODO find out) but it's possible'
+1) You can easily write documentation in any editor, 
+   you don't need Vimwiki or anything else. 
+   Infact, I'm not sure what Vimwiki brings to the table here (Ironically, there was nothing in their documentation).
 
 2) I would prefer something built for this purpose such as [readthedocs](https://readthedocs.org/) 
 
-##### Maintain a diary
+##### 4. Maintain a diary
 
-Ok, vimwiki wins here, I have no idea how you'd do this without too many lines of vimscript.
+Ok, Vimwiki wins here, I have no idea how you'd do this without too many lines of vimscript.
 
-##### Export everything to HTML
+##### 5. Export everything to HTML
 
 Again, two points here:
 
@@ -91,3 +98,28 @@ Again, two points here:
    ```
    nnoremap <leader>r :!pandoc % --to=html5 > %.html
    ```
+
+#### Other stuff    
+
+##### Tags
+
+Vimwiki boasts that you can 'tag' pages, well, this is pretty easy depending on how you want to do it.
+
+You could either tag pages on the index page, or on the post itself.
+
+If we were to tag our index page, it might look like this
+```
+- article-1.md - A description of what article-1 is [programming]
+- article-2.md - A description of what article-2 is [vim, programming]
+- article-3.md - A description of what article-3 is [sql]
+- article-4.md - A description of what article-4 is [programming]
+```
+
+Then you can just use `vimgrep` or `lvimgrep` to search for your tags.
+In our case, looking for the `vim` tag would look like:
+
+```
+lvimgrep '\[vim.*\]' %
+```
+
+And now we have all pages tagged `vim` in our location list and we can `gf` to the article in that location list.
