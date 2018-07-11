@@ -1,7 +1,6 @@
 ---
 layout: default
 tags: programming
-published: false
 ---
 
 # You (probably) don't need Vimwiki
@@ -17,7 +16,7 @@ Vimwiki states the following features:
 
 ## 1. Organise notes and ideas
 
- When I used to use Vimwiki, I loved the ability to link files to each other but I have two letters for you; `gf`. `gf` allows you to edit the file under the cursor (assuming it's in your path). (see `:help gf`)
+When I used to use Vimwiki, I loved the ability to link files to each other but I have two letters for you; `gf`. `gf` allows you to edit the file under the cursor (assuming it's in your path). (see `:help gf`)
 
 With a sensible directory structure, you can easily organise your notes and ideas. Take a look at [my repo](https://github.com/joereynolds/life) and come back here when you're done.  That repository is just a dumping ground of articles that I may or may not write at some point but the point is,
 it's entirely navigable with vim.  
@@ -150,5 +149,6 @@ lvimgrep '\[vim.*\]' %
 
 And now we have all pages tagged `vim` in our location list and we can `gf` to the article in that location list.
 
+## This is too much work    
 
-Then again, these are all just opinions, if you like Vimwiki, and it works for you, use it.
+If you think all of what I've said is just the hard way around, then continue using Vimwiki.
