@@ -22,8 +22,6 @@ I forced myself to get used to the native way and now it's just as fast and I kn
 You'd probably be surprised at the amount of stuff this tip will help you get rid of.
 
 
-
-
 ## Remove settings defined elsewhere*
 
 ```
