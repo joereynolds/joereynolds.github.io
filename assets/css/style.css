@@ -35,33 +35,15 @@ header, main, nav, section, summary {
   display: block;
 }
 
-/* Red things */
-h2,
-code,
-a:hover {
-  color: red;
-}
-
-/* Pix */
 img {
   display: block;
   width: 100%;
 }
 
-/* Links
--------------------------------------------------- */
-a {
-  color: #000;
-  text-decoration: none;
-  transition: color .3s, background .3s, border .3s;
-}
-
-/* Site
--------------------------------------------------- */
 html {
-  height: 100%;
   color: #222;
   font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
 }
 
 body {
@@ -73,8 +55,12 @@ body {
   position: relative;
 }
 
+a {
+  color: #222;
+}
+
 blockquote {
-  border-left : 2px solid red;
+  border-left : 2px solid #222;
   padding-left :15px;
   font-size : .8em;
 }
@@ -101,24 +87,18 @@ tr:nth-child(odd) {
   background-color:#dcd9d9;
 }
 
-td{
+td {
   text-align:center;
 }
 
 /* Header -------------------------------------------------- */
 header {
-  border-bottom: 2px solid red;
   margin-bottom: 1.5em;
 }
 
 header a {
-  color: #222;
   font-weight: 600;
   margin-right: 15px;
-}
-
-header a:hover {
-  text-decoration: none;
 }
 
 /* Headings -------------------------------------------------- */
@@ -135,20 +115,12 @@ main ol {
   margin-bottom: 1.5em;
 }
 
-main a {
-  border-bottom: 2px solid #ddd;
-}
-
-main a:hover {
-  border-color: #222;
-}
-
 .text ul,
 .text ol {
   margin-left: 1em;
 }
 
-/* Articlelist --------------------------------------------*/
+/* Article list --------------------------------------------*/
 #filter {
     padding: 5px;
     border: 2px solid #ddd;
@@ -174,12 +146,7 @@ main a:hover {
     font-weight: bold;
 }
 
-.article-tag:hover {
-    color: inherit;
-    border-bottom-color: transparent;
-}
-
-/* make this response */
+/* make this responsive */
 .sidenote {
     font-size: small;
     width: 200px;
