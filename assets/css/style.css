@@ -46,6 +46,10 @@ html, a {
   color: #222;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 body {
   margin: 0 auto;
   font-size: 1.25rem;
