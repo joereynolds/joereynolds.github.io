@@ -138,14 +138,6 @@ main ol {
     font-size: small;
 }
 
-.article-tag {
-    background: #ddd;
-    padding: 5px;
-    line-height: 1;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
 /* make this responsive */
 .sidenote {
     font-size: small;
