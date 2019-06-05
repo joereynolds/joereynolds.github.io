@@ -93,7 +93,7 @@ There are many pentatonic scales around and I can't cover them all but hopefully
 
 ## Superimposing the pentatonic scale
 
-There are other less obvious ways to get more mileage out of pentatonic scales aside from just playing the scale over a static backing. For instance, if we consider the concept of (link: http://localhost/kirby-2.0.5/Music/Theory/superimposition text: superimposition), then we can see many other possibilities for just this one scale.
+There are other less obvious ways to get more mileage out of pentatonic scales aside from just playing the scale over a static backing. For instance, if we consider the concept of [superimposition](/2018/06/12/superimposition.html), then we can see many other possibilities for just this one scale.
 
 A very quick way to see the merits of such a scale is to consider it against a backing of all 12 keys.
 
