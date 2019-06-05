@@ -189,7 +189,7 @@ class PermissionDeniedException
 }
 ```
 
-This error is rife with opportunity to supploy more information:
+This error is rife with opportunity to supply more information:
 
 ```
 class PermissionDeniedException
@@ -233,7 +233,7 @@ It logs all over the place and very verbosely, it features the following logging
   subsequent warning to let the user know we have found and are using an
   alternative).
 
-If you have some common sense and try and put yourself in the user's shoes,
-you'll probably find your error messages improve. Remember that during
-development, it's more than likely you that's going to be encountering these
+If you have some common sense and start putting yourself in the user's shoes,
+you'll find your error messages improve. Remember that during
+development, it's likely that you're the person that's going to be encountering these
 messages and wishing they made more sense, so do yourself a favour.
