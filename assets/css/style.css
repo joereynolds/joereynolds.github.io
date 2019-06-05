@@ -94,8 +94,13 @@ main ol {
 }
 
 .article-information {
-    float: right;
     font-size: small;
+}
+
+@media (min-width: 768px) {
+    .article-information {
+        float: right;
+    }
 }
 
 /* make this responsive */
