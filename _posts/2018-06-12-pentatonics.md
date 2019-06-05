@@ -32,16 +32,18 @@ A  | C  | D    | Eb   | E | G
 (The above Blues Scale is just a minor pentatonic with an added b5.)
 
 
-There are other lesser known pentatonic scales apart from the above. First off, we could get a great deal more variation out of each pentatonic by thinking modally and maybe starting the scale on a different root to imply a different mode.
+There are other lesser known pentatonic scales apart from the above. First off, we could get a great deal more variation out of each pentatonic by thinking modally and starting the scale on a different root to imply a different mode.
 
 
 We know that:
 
-A minor pentatonic is A C D E G
+A minor pentatonic is:
 
-but, if we start this same scale on C, we get this
+`A C D E G`.
 
-C D E G A
+If we start this same scale on C, we get:
+
+`C D E G A`.
 
 Now we break this down and see how the intervals relate to C.
 
@@ -49,27 +51,27 @@ C  | D  | E    | G     | A
 ---|----|-----|------|--
 1|  2 | 3   | 5   | 6
 
-Well, it's not the most interesting example. We should be well aware that this is just the major pentatonic scale.
+It's not the most interesting example. This is just the major pentatonic scale.
 
-Let's try one more, lesser known example to get us used to the idea.
+Let's try a more lesser known example to get us used to the idea.
 
 If we start on G:
 
-G A C D E
+`G A C D E`
 
-1 2 4 5 6
+`1 2 4 5 6`
 
 
-We get a scale that is suitable for not only major playing but also suits the dorian mode as well. Unfortunately it is extremely useful to study the formulas of each scale and get an encyclopeadiac knowledge of them, as this topic crops up extremely often.
+We get a scale that is suitable for not only major playing but also suits the Dorian mode as well. It's useful to study the formulas of each scale and get a thorough knowledge of them, as this topic crops up extremely often.
 
 Being able to understand what scale works with what key is absolutely necessary for music and I have written an article explaining all of this here.
 
 
 ## Other scales
 
-Okay, now that we have exhausted the basic penatonics, it is time to consider completely different scales.
+Okay, now that we have exhausted the basic pentatonics, it is time to consider completely different scales.
 
-One of the most interesting pentatonic scales I have come across, is the Indian pentatonic ( I guess it's called that for a reason but I'm not sure).
+One of the most interesting pentatonic scales I have come across, is the Indian pentatonic.
 
 The Indian pentatonic scale in A is:
 
@@ -77,7 +79,7 @@ A  | C#  | D    | E     | G
 ---|----|-----|------|--
 1|  3 | 4   | 5   | b7
 
-Anytime you see a formula like the above, you should be thinking what it can go against. We can see that this could work against a major backing but equally, we should notice the b7 at the end of the scale which hints a lot more closely to a dominant sound.
+Anytime you see a formula like the above, you should be thinking what it can go against. We can see that this could work against a major backing but equally, we should notice the b7 at the end of the scale which hints at a dominant sound.
 
 If we carry out the logic that we did at the beginning of this article and start this scale on a different note, we can get even more interesting ideas.
 
@@ -100,87 +102,47 @@ If we take A minor for example and cycle through all 12 keys, we get the followi
 
 A Minor pentatonic
 	
- A
- C	
- D	
- E
- G
+`A C D E G `
+
 Over A
 	
- 1	
- b3	
- 4
- 5	
- b7
+`1 b3 4 5 b7`
+
 Over B
 	
- b7	
- b2
- b3
- 4
- b6
+b7 b2 b3 4 b6
+
 Over D
 	
- 5	
- b7	
- 1
- 2	
- 4
+`5 b7 1 2 4`
+
 Over F
 	
- 3	
- 5	
- 6	
- 7	
- 2
+`3 5 6 7 2`
+
 Over E	
- 4
- b6
- b7	
- 1
- b3
+
+`4 b6 b7 1 b3`
+
 It would also be necessary to consider the major pentatonic against backings as this seems to be a much underappreciated scale in western music.
 
 A Major pentatonic
 	
- A
+ A B C# E F#
 	
- B
-	
- C#
-	
- E
-	
- F#
-	
- 
 Over A
 	
- 1
-	
- 2
-	
- 3
-	
- 5
-	
- 6
+`1 2 3 5 6`
 	
  
 Over B
 	
- b7	
- 1	
- 2	
- 4	
- 5
-Over D	
- 5	
- 6	
- 7	
- 2	
- 3
+`b7 1 2 4 5`
 
-It's up to you to determine what you think is a suitable imposition. Just by looking at the above we can see that A minor over an F backing would yield a major sound due to the lack of flat tones whereas if we were to play the exact same scale but over a B backing, the effect would be the complete opposite. We would then be implying the b7 b2 b3 b6 and 4 of B which is essentially the phrygian mode.
+Over D	
+
+`5 6 7 2 3`
+
+It's up to you to determine what you think is a suitable imposition. Just by looking at the above we can see that A minor over an F backing would yield a major sound due to the lack of flat tones whereas if we were to play the exact same scale but over a B backing, the effect would be the complete opposite. We would then be implying the `b7 b2 b3 b6` and `4` of `B` which is essentially the Phrygian mode.
 
 This can be taken in many different ways and for further reading on pentatonics I would recommend listening to traditional Japanese and Chinese music, these two tend to utilise these scales to a greater degree and with more variety than in western music.
