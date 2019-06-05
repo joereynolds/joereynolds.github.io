@@ -1,75 +1,136 @@
-This morning I updated a plugin for my Vim config and I'm a keen bean so I like
-to look at the diffs of what's changed, this was one of the commits.
+# Better error messages for everyone
+
+An all too common thing for all developers (not just newbies) is vague error
+reporting with blanket statements pinpointing you to precisely 0 solutions to
+the issue.
+
+Consider the following simple but real example of an error message:
+
+(Note that all the code below is language agnostic and abstracted away. We 
+want to focus on the messages, not the implementation.)
 
 ```
-commit c1ea19aa215ca211eb06717443e3457491a1375e
-Author: Shougo Matsushita <Shougo.Matsu@gmail.com>
-Date:   Fri Nov 23 16:21:26 2018 +0900
-
-    Improve except
-
-diff --git a/rplugin/python3/deoplete/logger.py b/rplugin/python3/deoplete/logger.py
-index 3cb8370..59127df 100644
---- a/rplugin/python3/deoplete/logger.py
-+++ b/rplugin/python3/deoplete/logger.py
-@@ -49,9 +49,7 @@ def setup(vim, level, output_file=None):
-             import pkg_resources
- 
-             pynvim_version = pkg_resources.get_distribution('pynvim').version
--        except ImportError:
--            pynvim_version = 'unknown'
--        except pkg_resources.DistributionNotFound:
-+        except Exception:
-             pynvim_version = 'unknown'
- 
-         log = getLogger('logging')
+You do not have enough permissions to perform this request.
 ```
 
-Sadly this is all too common at where I work, I didn't know it stretched out
-elsewhere but apparently it does :(
+What's wrong here?
 
-Here are a few more examples
+Well, the stack trace will handle telling us what file and line number caused it
+but with a bit of forethought, we could help the user out even more by providing
+*contextual information*.
 
+Contextual information in an error can tell us more about the situation.
 
-screenshot this http://stash.sykescottages.co.uk/projects/HYP/repos/hyperion/pull-requests/2057/overview
+We can refactor this error to provide such information as:
 
-## What's The Problem
+- Who doesn't have permissions to perform the request?
 
-**They've replaced two (potentially) specific errors with one very generic
-`Exception.`**
+- What do they need to do to be able to perform the request?
 
-In any case this is the opposite of how I'd work, if a new abnormal situation
-occurs, I'd like a specific exception to be thrown so we can handle it
-correctly.
+- Why can't they perform the request?
 
-All they've done here is mask every future error with the string 'unknown'
-
-
-
-
-## What's The Solution
-
-In my eyes (correct me if I'm wrong) I would:
-
-- Keep those two previous errors, `ImportError` and `DistributionNotFound`
-- Add the generic `Exception` on top of the other two (not replace them)
-- Give better messages and include the exception's message.
-
-We go from this:
+Once we've answered those 3 questions, we end up with an error looking like this
 
 ```
-
+                                 Who          What                                    Why  
+                                  |            |                                       |
+To perform this request, the user %s needs the %s permissions. They currently have the %s permissions.
 ```
 
-To this:
+It's all well and good for me to assume you have all the knowledge of what went
+wrong available to you, so let's go through some code examples where we
+don't have everything we'd like to construct a decent error message
+and see what we can do about it.
+
+## 1
 
 ```
+public function handle()
+{
+    $model = App::make($this->location . studly_case($this->argument('model')));
 
+    $this->info(
+        $model->run($this->argument('keep-days')) ?  "Table(s) pruned": "Something went wrong"
+    );
+}
 ```
 
+This error's tricky since we don't actually throw or catch any exceptions.
+Unless we refactor the code, the best we can hope for with this amount of
+information is something along the lines of:
 
+```
+public function handle()
+{
+    $model = App::make($this->location . studly_case($this->argument('model')));
+    $errorMessage = "There was an error pruning tables"
 
-# TODO
+    $this->info(
+        $model->run($this->argument('keep-days')) ?  "Table(s) pruned": $errorMessage
+    );
+}
+```
 
-The PR doesn't actually change the message, it changes the pynvim version, still
-it should alert or something anyway
+True, it's not that much better but at least now if we see this output, we know
+where it's come from. Still, If the code had thrown exceptions in the first
+place we could catch and report on this properly.
+
+## 2
+
+```
+protected $error = 'This user is already unlocked.';
+```
+
+Could be 
+
+```
+protected $error = 'The user %s is already unlocked.';
+```
+
+Again, quite a simple message with not much going on. In this case, it'd be
+useful to know what user is trying to be unlocked.
+
+## 3
+
+Going back to our very first example, we have:
+
+```
+protected $error = 'You do not have enough permissions to perform this request.';
+```
+
+This could be transformed to supply mountains of information to the user:
+
+```
+protected $error = 'To perform this request, the user %s needs the %s permissions. They currently have the %s permissions.';
+```
+
+Actually doing this is a bit more tricky as it would rely on us pulling all of
+this data (The groups the user's in, the groups the user needs to be in, and the
+username). We're also expected to make our code a bit heavier for
+the sake of a better user experience.
+
+## User Experience beats your ego
+
+I've fallen into this trap before. Being hesitant to 'clog' up the code because
+I don't want to sully my work for the sake of better errors (which seemed
+unimportant to me at the time).
+
+All I can say is you need to drop your ego off at the door. Users use your code,
+not you. You code for them, write better exceptions/logs for them too.
+
+An instance of this can be found in one of my projects, [mort](https://github.com/joereynolds/mort). `mort` was my first dive into a proper CLI and also my first look at Typescript. 
+
+It logs all over the place and very verbosely, it features the following logging:
+
+- 3 different verbosity levels, 
+    - `-v` (display the file being operated on), 
+    - `-vv` (displays level 1 + the command generated by `mort`)
+    - `vvv`  (displays levels 1 + 2 + displays all of the searches it's
+      performing.)
+
+- A message on failure of opening a file, and the name of the file.
+
+- A warning emitted when a user does not have a program installed (and a
+  subsequent warning to let the user know we have found and are using an
+  alternative).
+
