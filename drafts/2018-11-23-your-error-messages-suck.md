@@ -44,6 +44,10 @@ and see what we can do about it.
 
 ## 1
 
+Our first example is a tricky one. We don't actually throw or catch any
+exceptions so we can hardly catch or explain them in an elegant way unless we
+refactor the code. 
+
 ```
 public function handle()
 {
@@ -55,9 +59,8 @@ public function handle()
 }
 ```
 
-This error's tricky since we don't actually throw or catch any exceptions.
-Unless we refactor the code, the best we can hope for with this amount of
-information is something along the lines of:
+The best we can hope to achieve with this amount of information is something
+along the lines of:
 
 ```
 public function handle()
@@ -77,37 +80,54 @@ place we could catch and report on this properly.
 
 ## 2
 
-```
-protected $error = 'This user is already unlocked.';
-```
-
-Could be 
+Our next example gives us more to work with. 
 
 ```
-protected $error = 'The user %s is already unlocked.';
+class UserAlreadyUnlockedException
+{
+    protected $error = 'This user is already unlocked.';
+}
 ```
 
-Again, quite a simple message with not much going on. In this case, it'd be
-useful to know what user is trying to be unlocked.
+This jumps out straight away. If you saw this message, you'd be wondering to
+yourself "Okay, which user?", so let's answer that for them.
+
+```
+class UserAlreadyUnlockedException
+{
+    protected $error = 'The user %s is already unlocked.';
+}
+```
+
+Again, quite a simple message with not much going on. Still, we've
+managed to give some information to the user.
 
 ## 3
 
 Going back to our very first example, we have:
 
 ```
-protected $error = 'You do not have enough permissions to perform this request.';
+class PermissionDeniedException
+{
+    protected $error = 'You do not have enough permissions to perform this request.';
+}
 ```
 
 This could be transformed to supply mountains of information to the user:
 
 ```
-protected $error = 'To perform this request, the user %s needs the %s permissions. They currently have the %s permissions.';
+class PermissionDeniedException
+{
+    protected $error = 'To perform this request, the user %s needs the %s permissions. They currently have the %s permissions.';
+}
 ```
 
 Actually doing this is a bit more tricky as it would rely on us pulling all of
 this data (The groups the user's in, the groups the user needs to be in, and the
 username). We're also expected to make our code a bit heavier for
 the sake of a better user experience.
+
+This leads us to our next point...
 
 ## User Experience beats your ego
 
@@ -133,4 +153,3 @@ It logs all over the place and very verbosely, it features the following logging
 - A warning emitted when a user does not have a program installed (and a
   subsequent warning to let the user know we have found and are using an
   alternative).
-
