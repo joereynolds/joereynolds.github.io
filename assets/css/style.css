@@ -28,6 +28,10 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+  margin-bottom: 1.5em;
+}
+
 header {
   margin-bottom: 1.5em;
 }
@@ -37,22 +41,22 @@ header a {
 }
 
 body {
-  margin: 0 auto;
   line-height: 1.75em;
-  padding: 1.5em;
+  margin: 0 auto;
   max-width: 35em;
+  padding: 1.5em;
   position: relative;
 }
 
 blockquote {
   border-left : 2px solid #222;
-  padding-left :15px;
   font-size : .8em;
+  padding-left :15px;
 }
 
 .hljs {
-  line-height:18px;
   font-size:14px;
+  line-height:18px;
   margin-bottom:30px;
 }
 
@@ -73,18 +77,6 @@ h1, h2, h3, h4, h5 {
   line-height: 1.25em;
   font-weight: 400;
   margin-bottom: .5em;
-}
-
-/* Main -------------------------------------------------- */
-main p,
-main ul,
-main ol {
-  margin-bottom: 1.5em;
-}
-
-.text ul,
-.text ol {
-  margin-left: 1em;
 }
 
 /* Article list --------------------------------------------*/
