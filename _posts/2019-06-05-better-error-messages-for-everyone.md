@@ -1,3 +1,8 @@
+---
+layout: default
+tags: programming
+---
+
 # Better error messages for everyone
 
 An all too common thing for all developers (not just newbies) is vague error
