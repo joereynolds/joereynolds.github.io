@@ -28,7 +28,7 @@ a:hover {
     text-decoration: none;
 }
 
-p, header, table {
+p, header, table, ul, ol {
   margin-bottom: 1.5em;
 }
 
