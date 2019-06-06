@@ -63,8 +63,8 @@ Knowing this, I'm pretty sure we can pull off some modulations. These may not so
 
 First, I'll show you the sequence, and then I'll explain it
 
-C  | G7  | Ddim   | Bdim | E7 | A    
----|----|-----|----|---|---|---
+C  | G7  | Ddim   | Bdim | E7 | A   
+---|----|-----|----|---|---
 
 We start off on our I chord (C).
 
@@ -115,6 +115,7 @@ And here're a few options
 - Flattening the 'B'
 
 #### Bb7
+
 Bb | D  | F    | Ab    
 ---|----|-----|----
 
