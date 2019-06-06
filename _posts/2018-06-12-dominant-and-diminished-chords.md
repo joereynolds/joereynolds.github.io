@@ -63,36 +63,41 @@ Knowing this, I'm pretty sure we can pull off some modulations. These may not so
 
 First, I'll show you the sequence, and then I'll explain it
 
-C  | G7  | Ddim   | Bdim | E7 | A   
----|----|-----|----|---|---
+```
+C G7 Ddim Bdim E7 A   
+```
 
-We start off on our I chord (C).
+We start off on our `I` chord (C).
 
-And then we move to our V chord (G7). We play this G7 in its second inversion (with a D in the bass, this sets us up for our next move).
+And then we move to our `V` chord (G7). We play this G7 in its second inversion (with a D in the bass, this sets us up for our next move).
 
 We then raise the G in our G7 up a semi-tone. 
 
 #### From
 
-D  | G  | B    | F    
----|----|-----|----
+```
+D G B F    
+```
 
 #### To
 
-D | Ab  | B    | F    
----|----|-----|----
+```
+D Ab B F    
+```
 
 Knowing that it is safe to move up or down by a minor third, we do just that and move down to a B diminished chord 
 
 #### To 
 
-B | F  | G#    | D    
----|----|-----|----
+```
+B F G# D    
+```
 
 Now that we're on this chord, we simply move the F in the B diminished chord down a semi-tone and would you look at that, an E7!*
 
-B | E  | G#    | D    
----|----|-----|----
+```
+B E  G# D    
+```
 
 We're now in A major's territory, we play the E7 (The Vth of A) and then proceed to play the A.
 Simples!
@@ -106,9 +111,9 @@ Here's the original chord
 
 #### B dim
 
-B | D  | F    | G   
----|----|-----|----
-
+```
+B D F G   
+```
 
 And here're a few options
 
@@ -116,31 +121,33 @@ And here're a few options
 
 #### Bb7
 
-Bb | D  | F    | Ab    
----|----|-----|----
-
+```
+Bb D F Ab    
+```
 
 - Flattening the 'F' as previously done
 
 #### E7
 
-B | D  | E#    | G    
----|----|-----|----
+```
+B D E# G    
+```
 
 - Flattening the 'D'
 
 #### C#7
 
-B | F  | G#    | C#    
----|----|-----|----
-
+```
+B F G# C#    
+```
 
 - Flattening the Ab/G#
 
 #### G7
 
-B | F  | G    | D    
----|----|-----|----
+```
+B F G D    
+```
 
 # Conclusion
 We've only really scraped the surface of the dominant/diminished relationships but hopefully this will give you a few ideas the next time you encounter either of those chords.
