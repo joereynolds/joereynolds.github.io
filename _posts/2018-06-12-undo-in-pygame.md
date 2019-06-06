@@ -5,7 +5,7 @@ tags: programming
 
 Today, I got well and truly nerd-sniped into creating a Bomberman-like puzzle game. Here's a very early (1 days work) gif to show you what's been implemented.
 
-![undo in pygame animation](image: http://i.imgur.com/BLsrPFk.gif)
+![undo in pygame animation](http://i.imgur.com/BLsrPFk.gif)
 
 In that video I've included the topic of this talk...Undo functionality!
 
