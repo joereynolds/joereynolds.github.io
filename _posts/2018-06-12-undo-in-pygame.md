@@ -5,7 +5,7 @@ tags: programming
 
 Today, I got well and truly nerd-sniped into creating a Bomberman-like puzzle game. Here's a very early (1 days work) gif to show you what's been implemented.
 
-(image: http://i.imgur.com/BLsrPFk.gif)
+![undo in pygame animation](image: http://i.imgur.com/BLsrPFk.gif)
 
 In that video I've included the topic of this talk...Undo functionality!
 
@@ -16,25 +16,25 @@ Atleast, it's way simpler than I thought. Here are the parts you need to see to 
 Since you're all eager beavers, here's the main undo functionality
 
 ```
-   def update(self, command):
+def update(self, command):
+    ...
+    elif command == 'u':
+        if self.move_stack:
+            self.move(keys.opposites[self.move_stack.pop()]) #undo
+    else:
+        self.move(command)
+        self.move_stack.append(command)
         ...
-        elif command == 'u':
-            if self.move_stack:
-                self.move(keys.opposites[self.move_stack.pop()]) #undo
-        else:
-            self.move(command)
-            self.move_stack.append(command)
-            ...
 ```
 
 And here's how it gets updated
 ```
-    def process_input(self):
-        pressed_keys = pygame.key.get_pressed()
-        for event in pygame.event.get():
-            for k,v in keys.keys.items():
-                if pressed_keys[k]:
-                    self.player_group.update(v)
+def process_input(self):
+    pressed_keys = pygame.key.get_pressed()
+    for event in pygame.event.get():
+        for k,v in keys.keys.items():
+            if pressed_keys[k]:
+                self.player_group.update(v)
 ```
 Finally, here's how we reverse our actions.
 It's kind of hacky but it works. It's just a dictionary giving us the opposite direction of the initially inputted command.
