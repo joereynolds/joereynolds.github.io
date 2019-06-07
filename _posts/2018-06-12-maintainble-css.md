@@ -94,7 +94,6 @@ footer a:first-child {
     color: black;
     background: white;
 }
-
 ```
 
 # 5. Get clever with CSS selectors
@@ -233,14 +232,14 @@ For the record I do like SASS and LESS but they tend to promote(not on purpose) 
 The worst one I see all the time is something like this
     
 ```
-    section {
-        ul {
-            li {
-                a {
-                }
+section {
+    ul {
+        li {
+            a {
             }
         }
     }
+}
 ```
 
 Which compiles down to a horribly specific
