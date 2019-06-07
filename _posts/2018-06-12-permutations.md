@@ -5,21 +5,20 @@ tags: music
 
 When we look at permutations, we are concerning ourselves with the different combinations a phrase can be played in. It might not seem immediately obvious to even try this but there is good reason to, it can reveal some phrases that you might have missed and perhaps force you to play something slightly out of your reach.
 
-Let's take for example, the Major7 chord.
-The Major7 chord contains the intervals 1-3-5-7
-If we use basic counting, we can figure out that there are a total of 24 combinations for this set of notes. (4x3x2x1)
+Let's take the Major7 chord as an example.
+The Major7 chord contains the intervals `1-3-5-7`.
 
-If this were a 5 note set such as a Major9, the amount of permutations available to us would be 120. (5x4x3x2x1)
+If we use basic counting, we can figure out that there are a total of 24 combinations for this set of notes. (`4 * 3 * 2 * 1`)
+
+If this were a 5 note set such as a Major9, the amount of permutations available to us would be 120. (`5 * 4 * 3 * 2 * 1`)
 
 Knowing this, we can begin inverting and modifying our phrases from a simple upwards arpeggiation of a Major7 chord :
 
 1  |  3 | 5    | 7   
----|----|-----|-----
 
 To a more outside phrase starting on a sharp dissonance (the major 7th) and resolving to the I :
 
 7  |  3 | 5    | 1   
----|----|-----|-----
 
 Depending on the genre or your style, you may choose to emphasise different tones. Jazz generally tends to emphasise the strongest tones of the chord on the main beats, so we could say we're playing quarter notes and emphasis would be on the 1st and 3rd beat.
 
@@ -81,12 +80,14 @@ Now we will take a look at True inversion...
 True inversion is exactly the same as diatonic inversion except that is non-diatonic. Using the same example as above will easily show what I mean.
 
 #### Original Set
+
 1  | 3  | 5    | 6   
 ---|----|-----|-----
 C|  E   | G   | A  
 
 
 #### Diatonic inversion
+
 1  | 6  | 4    | 3   
 ---|----|-----|-----
 C|  A   | F   | E
@@ -109,7 +110,7 @@ I suggest practicing this on paper before you try and apply it as it can become 
 
 Retrograde - A retrograde permutation is just the same phrase but played backwards and diatonically so:
 
-**C-E-G** would become **G-E-C**, just as **A-F-G#-E** would become **E-G#-F-A**... Simples!
+`C-E-G` would become `G-E-C`, just as `A-F-G#-E` would become `E-G#-F-A` ... Simples!
 
 Retrograde Inversion -  Retrograde inversion is just the idea of joining inversion and retrograde together. Therefore a phrase is now played backwards (retrograde) and upsidedown (inversion).
 
