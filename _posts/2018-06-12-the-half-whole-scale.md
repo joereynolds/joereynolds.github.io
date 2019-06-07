@@ -19,7 +19,7 @@ C  Db  Eb  E  Gb  G  A  Bb
 ```
 #### Symmetrical Properties
 
-Like I quickly touched upon in the bullet points, the half-whole scale is a SYMMETRICAL scale. It is not symmetrical in the strict sense that it divides the octave up into equal parts like a whole-tone or chromatic scale would, but the sequence of notes in the half-whole scale is symmetrical.
+Like I quickly touched upon in the bullet points, the half-whole scale is a *symmetrical* scale. It is not symmetrical in the strict sense that it divides the octave up into equal parts like a whole-tone or chromatic scale would, but the sequence of notes in the half-whole scale is symmetrical.
 
 For example, in our above table, if we isolate the first three elements of the scale (C, Db, Eb) and view their intervals, we get the formula:
 ```
@@ -29,9 +29,9 @@ If we move up a minor third to our Eb and look at the interval sequence (Eb, E, 
 ```
 1  b2  b3
 ```
-Because of this symmetry, any pattern and any chord you play CAN be played a minor third up or down, lending itself well to some weird modulations and to very easy improvisation.
+Because of this symmetry, any pattern and any chord you play *can* be played a minor third up or down, lending itself well to some weird modulations and to very easy improvisation.
 
-That means that you can play some random noodles in the half-whole scale and move that wholeee noodle up a minor third and it will still work just fine. This works with chord sequences too!
+That means that you can play some random noodles in the half-whole scale and move that whole noodle up a minor third and it will still work just fine. This works with chord sequences too!
 
 Let's take a nice relative minor/major chord jam over a I - VI progression in C.
 
@@ -166,15 +166,11 @@ For the sake of being succinct, I will modulate quickly and harshly to the half-
 
 Here's our full sequence. 
 ```
- F   Dm   Gm   C7   F   Dm   A7   C7   Eb   C   Eb   C7
+ F   Dm   Gm   C7  F   Dm   A7     C7  Eb     C   Eb     C7
  I   vi   ii   V   I   vi   III7   V   bVII   V   bVII   V
 ```
 It's only a brief modulation towards the end (where it goes to eb). Admittedly I'm not the best at roman numeral notation so my 'III7' may not be seen as ideal. 
-#### This is the end, for you my friend, the end.
 
 Sadly, our time must come to an end, I've got one last little treat that I recorded a few years ago (I knew it'd be relevant one day!). It's a short video demonstrating the half-whole scale.
 
-(youtube: https://www.youtube.com/watch?v=9j-ta-E2czk )
-
-Until next time
-p.s. I totally dig that jumper, my fashion sense is impeccable.
+[Watch here](https://www.youtube.com/watch?v=9j-ta-E2czk)
