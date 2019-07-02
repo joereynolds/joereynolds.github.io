@@ -30,4 +30,6 @@ recreating things with every patch, it's getting tedious.
 Output was normalized manually with ffmpeg (life changing program) using the
 command below:
 
+```
 ffmpeg -i patch_3.mkv -af "volume=24dB" output.mkv
+```
