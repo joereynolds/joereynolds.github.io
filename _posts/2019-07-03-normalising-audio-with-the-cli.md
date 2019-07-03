@@ -1,6 +1,6 @@
 ---
 layout: default
-tags: music, programming
+tags: [music, programming]
 ---
 
 # Normalising audio with the CLI

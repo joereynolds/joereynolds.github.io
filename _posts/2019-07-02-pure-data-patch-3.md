@@ -1,6 +1,6 @@
 --- 
 layout: default 
-tags: programming, music
+tags: [music, programming]
 ---
 
 # \#3
