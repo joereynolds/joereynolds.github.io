@@ -90,11 +90,3 @@ h1, h2, h3, h4, h5 {
         float: right;
     }
 }
-
-/* make this responsive */
-.sidenote {
-    font-size: small;
-    width: 200px;
-    position: absolute;
-    right: -200px;
-}
