@@ -22,7 +22,7 @@ The easiest way to normalise audio is with [SoX](http://sox.sourceforge.net/),
 it just works™.
 
 Let's say you have a quiet audio file with a tolerable signal-to-noise ratio,
-you can do the following
+you can do the following:
 
 ```
 sox --norm my_file.wav my_normalised_file.wav
@@ -32,14 +32,14 @@ And that's it, you'll now have a normalised wav file.
 
 ## Changing file formats
 
-What you might find though is that a file format you want to normalise isn't
+What you might find is that a file format you want to normalise isn't
 supported by SoX.  For example, SoX doesn't work with mp3's out of the box so
-you'll need to transfer your file to a format that SoX does work with.
+you need to transfer your file to a format that SoX does work with.
 
 Enter `ffmpeg`...
 
-`ffmpeg` is another live changing program that you should learn about. Changing
-file formats is as simple as
+`ffmpeg` is another life changing program that you should learn about. Changing
+file formats is as simple as:
 
 ``` 
 ffmpeg -i my_file.mp3 my_file.wav 
