@@ -11,7 +11,7 @@ What if however, we desire the complete opposite of this effect but still wish t
 
 The linking of common tones within chords is traditionally and conventionally, diatonic. That is to say, that if we were to go from a Cmajor chord to an Aminor chord, we would keep the C and E notes present and in the same voice for smooth voice leading.
 
-If we look at the bollowing below, you'll see what  I mean
+If we look at the following below, you'll see what  I mean
 
  Chord    |                    |               |    |   
  ----------|-------------|-----------|--
