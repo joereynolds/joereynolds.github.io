@@ -8,12 +8,11 @@
 }
 
 article, aside, details, figcaption, figure,
-header, main, nav, section, summary {
+header, img, main, nav, section, summary {
   display: block;
 }
 
 img {
-  display: block;
   width: 100%;
 }
 
@@ -51,7 +50,7 @@ body {
 }
 
 blockquote {
-  border-left : 2px solid #222;
+  border-left : 2px solid currentColor;
   font-size : .8em;
   padding-left :15px;
 }
@@ -65,7 +64,7 @@ table {
 }
 
 table, tr, td {
-  border: 1px solid #222;
+  border: 1px solid currentColor;
 }
 
 .hljs {
