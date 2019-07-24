@@ -13,7 +13,7 @@ header, img, main, nav, section, summary {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 html {
