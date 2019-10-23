@@ -3,55 +3,55 @@ layout: default
 tags: [programming]
 ---
 
-# Burn
+## Burn
 <div class="box blend-burn"></div>
 <div class="box other-box"></div>
 
-# Color
+## Color
 <div class="box blend-color"></div>
 <div class="box other-box"></div>
 
-# Darken
+## Darken
 <div class="box blend-darken"></div>
 <div class="box other-box"></div>
 
-# Difference
+## Difference
 <div class="box blend-difference"></div>
 <div class="box other-box"></div>
 
-# Dodge
+## Dodge
 <div class="box blend-dodge"></div>
 <div class="box other-box"></div>
 
-# Exclusion
+## Exclusion
 <div class="box blend-exclusion"></div>
 <div class="box other-box"></div>
 
-# Hard Light
+## Hard Light
 <div class="box blend-hard-light"></div>
 <div class="box other-box"></div>
 
-# Hue
+## Hue
 <div class="box blend-hue"></div>
 <div class="box other-box"></div>
 
-# Lighten
+## Lighten
 <div class="box blend-lighten"></div>
 <div class="box other-box"></div>
 
-# Luminosity
+## Luminosity
 <div class="box blend-luminosity"></div>
 <div class="box other-box"></div>
 
-# Multiply
+## Multiply
 <div class="box blend-multiply"></div>
 <div class="box other-box"></div>
 
-# Screen
+## Screen
 <div class="box blend-screen"></div>
 <div class="box other-box"></div>
 
-# Soft Light
+## Soft Light
 <div class="box blend-soft-light"></div>
 <div class="box other-box"></div>
 
