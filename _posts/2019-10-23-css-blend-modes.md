@@ -1,3 +1,8 @@
+---
+layout: default
+tags: [programming]
+---
+
 # Burn
 <div class="box blend-burn"></div>
 <div class="box other-box"></div>
@@ -52,6 +57,7 @@
 
 <style>
 .box {
+  display: inline-block;
   width: 150px;
   height: 150px;
   background: yellow;
@@ -59,7 +65,7 @@
 }
 
 .other-box {
-    margin-top: -50px;
+    margin-left: -50px;
     background: #ff9898;
 }
 
