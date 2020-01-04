@@ -11,16 +11,20 @@ Probably to make notes, right?
 Well did you know that you don't need a plugin for this?
 Of course you did!
 
-Let's go through some of Vimwiki's features and dispel them in place of vim alternatives.
-Vimwiki states the following features:
+Let's go through some of Vimwiki's features and dispel them in place of vim
+alternatives.  Vimwiki states the following features:
 
 ## 1. Organise notes and ideas
 
-When I used to use Vimwiki, I loved the ability to link files to each other but I have two letters for you; `gf`. `gf` allows you to edit the file under the cursor (assuming it's in your path). (see `:help gf`)
+When I used to use Vimwiki, I loved the ability to link files to each other but
+I have two letters for you; `gf`. `gf` allows you to edit the file under the
+cursor (assuming it's in your path). (see `:help gf`)
 
-With a sensible directory structure, you can easily organise your notes and ideas. Take a look at [my repo](https://github.com/joereynolds/life) and come back here when you're done.  That repository is just a dumping ground of articles that I may or may not write at some point but the point is,
-it's entirely navigable with vim.  
-The directory structure is:
+With a sensible directory structure, you can easily organise your notes and
+ideas. Take a look at [my repo](https://github.com/joereynolds/life) and come
+back here when you're done.  That repository is just a dumping ground of
+articles that I may or may not write at some point but the point is, it's
+entirely navigable with vim.  The directory structure is:
 
 ```
 README.md   
@@ -32,9 +36,11 @@ docs/
   index.md
 ```
 
-`README.md` is the 'entrypoint' that most devs would open up straight away and contains a link to our main page, `index.md`.
+`README.md` is the 'entrypoint' that most devs would open up straight away and
+contains a link to our main page, `index.md`.
 
-`index.md` is just a table of contents hyperlinking to all other articles and looks like this:
+`index.md` is just a table of contents hyperlinking to all other articles and
+looks like this:
 
 ```
 - article-1.md - A description of what article-1 is
@@ -43,16 +49,20 @@ docs/
 - article-4.md - A description of what article-4 is
 ```
 
-From here, you can easily browser articles by pressing `gf` to edit the file your cursor is on.
+(this can be generated from within vim by going into insert mode and doing
+`<c-r>=glob('**/*')`)
 
-I usually use the jumplist (`<c-o>`, `<c-i>`, see `:help jumplist` for more) to go back and forth
-between the article and index page.
+From here, you can easily browse articles by pressing `gf` to edit the file
+your cursor is on.
+
+I usually use the jumplist (`<c-o>`, `<c-i>`, see `:help jumplist` for more) to
+go back and forth between the article and index page.
 
 ## 2. Manage todo lists
 
-I am a big todo list fan but that is one thing that I do not use vim for.
+I am a fan of todo lists but that is one thing that I do not use vim for.
 
-There's a few different kinds of TODO lists, and I treat them differently:
+There're a few different kinds of TODO lists, and I treat them differently:
 
 ### TODOs in code
 
@@ -61,7 +71,8 @@ There are two approaches I take to this:
 1) Make your TODO a github issue (The formal approach).
 
 This allows everyone to see it and I find the best and easiest way to track
-things. It's what I do with all of my projects. (Here's an [example](https://github.com/joereynolds/mort/issues))
+things. It's what I do with all of my projects. (Here's an
+[example](https://github.com/joereynolds/mort/issues))
 
 If you're averse to issue tracking, you can still track them in a separate file
 if that's what you're into.
@@ -82,10 +93,13 @@ thing you can do to consolidate these is just grep for them in your project.
 
 ### TODOs in life
 
-I am a big fan of todo lists and mine are constantly changing.
-So much so that having them in a versioned text file would be impractical, for this I use Google Keep.
+I am a big fan of todo lists and mine are constantly changing.  So much so that
+having them in a versioned text file would be impractical, for this I use Google
+Keep (I have moved away from it many times but always find myself coming back to
+it).
 
-If you're adamant on using Vim, I like a good old fashioned bulleted list and nothing more.
+If you're adamant on using Vim, I like a good old fashioned bulleted list and
+nothing more.
 
 ```
 # TODO  
@@ -104,6 +118,13 @@ There are two thoughts that go through my mind with this one:
    Infact, I'm not sure what Vimwiki brings to the table here (Ironically, there was nothing in their documentation).
 
 2) I would prefer something built for this purpose such as [readthedocs](https://readthedocs.org/) 
+
+*I have since read a [comment on
+reddit](https://www.reddit.com/r/vim/comments/ej3wzp/vimways_2019_personal_notetaking_in_vim/fcvl3l9/)
+that sparked my interest on using Vim's built-in help system as a documentation
+system. This works perfect for me (so far) but I imagine
+if you are working within a team, you'd want to use something more ubiquitous
+and user friendly.*
 
 ## 4. Maintain a diary
 
@@ -129,7 +150,8 @@ Again, two points here:
 
 ### Tags
 
-Vimwiki boasts that you can 'tag' pages, well, this is pretty easy depending on how you want to do it.
+Vimwiki boasts that you can 'tag' pages, well, this is pretty easy depending on
+how you want to do it.
 
 You could either tag pages on the index page, or on the post itself.
 If we were to tag our index page, it might look like this
@@ -148,6 +170,9 @@ lvimgrep '\[vim.*\]' %
 ```
 
 And now we have all pages tagged `vim` in our location list and we can `gf` to the article in that location list.
+
+Alternatively, if you're going the 'vim help' route, then you have a built-in
+tag system at your finger tips! (See `:help writing-help`)
 
 ## This is too much work    
 
