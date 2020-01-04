@@ -62,20 +62,11 @@ table, tr, td {
   border: 1px solid currentColor;
 }
 
-.hljs {
-  line-height:18px;
-}
-
 .article + .article {
   margin-top: 15px;
 }
 
 .article-information {
   font-size: small;
-}
-
-@media (min-width: 768px) {
-  .article-information {
-    float: right;
-  }
+  float: right;
 }
