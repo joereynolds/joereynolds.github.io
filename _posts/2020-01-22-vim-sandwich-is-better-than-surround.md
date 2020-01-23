@@ -34,11 +34,7 @@ the
 
 Seriously, look at the [amount of
 tests](https://github.com/machakann/vim-sandwich/tree/master/test) this thing
-has.
-[Regressions](https://github.com/tpope/vim-fugitive/commit/d428032600f738ff5246576a92716779a2b9d5d7)
-[in
-code](https://github.com/tpope/vim-fugitive/commit/cb613ca05d3d195d52cfb5ce32f44c1d9e196214)
-are very hard to make happen in well tested code.
+has.  Regressions in code are very hard to make happen in well tested code.
 
 ### 3) Is repeatable with '.' without an extra plugin
 
