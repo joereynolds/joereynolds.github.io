@@ -131,7 +131,7 @@ sdb
 
 ### You failed to mention [X] and that surround.vim can do [Y]
 
-Cool, bring it up in this [thread]() and I'll update this article.
+Cool, bring it up in this [thread](https://www.reddit.com/r/vim/comments/esrfno/why_vimsandwich_and_not_surroundvim/?) and I'll update this article.
 
 ### Just because it's the most popular doesn't mean it's the best choice
 
