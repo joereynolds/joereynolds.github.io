@@ -125,11 +125,57 @@ sdb
 
 ```
 
-### You failed to mention [X] and that surround.vim can do [Y]
+## You failed to mention [X] and that surround.vim can do [Y]
 
-Cool, bring it up in this [thread](https://www.reddit.com/r/vim/comments/esrfno/why_vimsandwich_and_not_surroundvim/?) and I'll update this article.
+Cool, bring it up in this
+[thread](https://www.reddit.com/r/vim/comments/esrfno/why_vimsandwich_and_not_surroundvim/?)
+and I'll update this section.
 
-### Just because it's the most popular doesn't mean it's the best choice
+*It looks cool, but a little intimidating with all those options (yes I realise
+what subreddit I'm in). Just tried it, don't dig the highlighting thingy and it
+doesn't seem to be optional. I'll try to hack it off.*
+
+You can turn it off with:
+
+```
+operator#sandwich#set('all', 'all', 'highlight', 0)
+```
+
+*It mentions it messes with the s key for substitute but vim-sneak also uses s
+and I personally couldn't make that trade.*
+
+
+In your case you have two options:
+
+1) vim-sneak allows you to specify a different mapping
+
+2) vim-sandwich also allows different mappings. Have a read of the docs. They
+will allow you to use surround.vim mappings but also leverage the features of
+vim-sandwich
+
+
+*I don't use it because it substitutes some of vim's default motions. I don't
+like that kind of plugin.*
+
+In that case you can use vim-sandwich with surround.vim keymappings. add the
+following line to your vimrc:
+
+```
+runtime macros/sandwich/keymap/surround.vim
+```
+
+*vim-sandwich looks great, and I'd be curious to try it, but it doesn't seem to
+support one particular feature of vim-surround that I use quite often: With
+vim-surround, you can change hello to {hello} with `csiw}`, or change it to {
+hello } with `csiw{`.  I could be wrong about vim-sandwich not supporting this,
+but I couldn't find anything about it in the repo.*
+
+User /u/vimdiesel gave [this link](https://github.com/machakann/vim-sandwich/issues/33)
+which addresses the issue.
+
+
+
+## Just because it's the most popular doesn't mean it's the best choice
 
 There are many great smaller vim plugins around and unfortunately, you really
 have to search for them. A lot of the time they trump the competition but the
@@ -139,7 +185,7 @@ I'd always suggest looking around for the plugin you want instead of settling on
 the plugin that's offered, it's not always the best choice.
 
 
-### References & Footnotes
+## References & Footnotes
 
 
 [surround.vim](https://github.com/tpope/vim-surround/) 
