@@ -32,7 +32,6 @@ header a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 400;
   line-height: 1.25em;
   margin-bottom: .5em;
 }
@@ -48,6 +47,10 @@ blockquote {
   border-left : 2px solid currentColor;
   font-size : .8em;
   padding-left :15px;
+}
+
+code {
+    font-weight: bold;
 }
 
 table {
