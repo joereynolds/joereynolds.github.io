@@ -28,5 +28,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+highlighter: none
+
 kramdown:
+    # Github pages needs to disable highlighting in a different way 
+    # according to the internet
+    syntax_highlighter_opts:
+        disable: true
     auto_ids: false
