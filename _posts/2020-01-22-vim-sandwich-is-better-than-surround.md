@@ -58,6 +58,24 @@ whatever you want.
 To surround a paragraph in `p` tags you would do `sa}tp` (and of course you
 could delete these with `sdb`).
 
+You can also add HTML attributes. For example if we have:
+
+```
+Some text here
+```
+
+and do (assuming the cursor is at beginning of the line)
+
+```
+sa$tdiv.body#main-content
+```
+
+then we get
+
+```
+<div class="body" id="main-content">Some text here</div>
+```
+
 ### 6) Visual feedback
 
 When using vim-sandwich, there is unobtrusive visual feedback every step of the
@@ -173,6 +191,24 @@ but I couldn't find anything about it in the repo.*
 User /u/vimdiesel gave [this link](https://github.com/machakann/vim-sandwich/issues/33)
 which addresses the issue.
 
+
+*Surround does that, too [HTML/XML tags in a nice way], and in a more semantic
+way, IMO: ysip<p\<CR>, optionally letting you add attributes and stuff.*
+
+
+You can add HTML attributes through vim-sandwich too, for example
+
+If we have:
+
+    Some text here
+
+and do (assuming the cursor is at beginning of the line)
+
+    sa$tdiv.body#main-content
+
+then we get
+
+    <div class="body" id="main-content">Some text here</div>
 
 
 ## Just because it's the most popular doesn't mean it's the best choice
