@@ -27,3 +27,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+kramdown:
+    auto_ids: false
