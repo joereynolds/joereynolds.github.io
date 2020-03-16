@@ -31,15 +31,14 @@ header a {
   margin-right: 15px;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   line-height: 1.25em;
   margin-bottom: .5em;
+  font-weight: 400;
 }
 
 h2, h3, h4, h5 {
   border-bottom: 1px solid black;
-  line-height: 1.25em;
-  margin-bottom: .5em;
   font-size: 1rem;
 }
 
@@ -48,6 +47,7 @@ body {
   margin: 0 auto;
   max-width: 35em;
   padding: 1.5em;
+  font-weight: 100;
 }
 
 blockquote {
