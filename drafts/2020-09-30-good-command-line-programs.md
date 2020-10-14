@@ -19,7 +19,7 @@ in scripts. You're going to need to come back to that script at some point to
 fix your inadequacies and you'll get round to fixing them much quicker if you
 can read your script like a well-written novel. Ripgrep (`rg`) is an excellent
 example of doing it right and there's an excellent article by /u/skeeto that
-goes into much further (and better) detail [here](https://nullprogram.com/blog/2020/08/01/).
+goes into further (and better) detail [here](https://nullprogram.com/blog/2020/08/01/).
 
 # Not be chatty
 
@@ -61,6 +61,9 @@ some `sql` files
 ```
 fd --extension sql | vidir
 ```
+
+(Mention here that if you don't allow stdin that you should at least try and
+make it `xargs` friendly as an alternative)
 
 # Exit correctly
 
