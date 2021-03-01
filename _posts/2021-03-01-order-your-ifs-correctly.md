@@ -25,7 +25,7 @@ We can use this to our advantage when looking for easy things to optimise.  A
 rule I follow is "put the cheapest condition first".
 
 There's no point in putting an expensive check at the beginning if it's not
-even going to enter into the rest of the block.
+going to enter into the rest of the block.
 
 Here's an example using the same `if` but re-ordered:
 
@@ -41,7 +41,7 @@ if not self.level.renderer.escape_menu.is_visible and not self.level.renderer.tr
 
 ### Bad
 
-Checks that all in-game effects are no longer transitions and then checks a
+Checks that all in-game effects are no longer transitioning and then checks a
 boolean on the escape menu.
 ```
 if not self.level.renderer.transition.is_transitioning() and not self.level.renderer.escape_menu.is_visible:
