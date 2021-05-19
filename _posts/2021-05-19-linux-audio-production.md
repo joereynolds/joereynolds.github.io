@@ -9,7 +9,8 @@ The future is here. I have moved my audio stack to Linux with no problems.
 
 All the VST's I used on Windows can be bridged to work on Linux.
 
-The guide below assumes that the distro you're using is Arch based (I use Manjaro) and the DAW is Reaper.
+The guide below assumes that the distro you're using is Arch based (I use
+Manjaro) and the DAW is Reaper.
 
 **Note** I had this working successfully with Ubuntu 20.04 but switched over to
 Manjaro for unrelated reasons. To reiterate, this *will* work on Ubuntu, the
@@ -60,3 +61,31 @@ yabridgectl sync
 To bridge them over and that's it!
 
 Start up Reaper and your windows plugins will be on your Linux machine <3
+
+#### Plugins through wine
+
+Some plugins like to be inconvenient and have `.exe` executables to run instead
+of a .DLL In that case, do this:
+
+- Install the plugin using wine
+- Make note of the VST plugin path (something like C://Users/Joe/Program Files/VST...)
+
+This path lives in Linux under a `.wine` directory.
+Mine is
+
+```
+/home/joe/.wine/drive_c/Program Files (x86)/VstPlugIns
+```
+
+- Add this path with yabridgectl (You need to escape spaces and braces)
+
+```
+yabridgectl add /home/joer/.wine/drive_c/Program\ Files\ \(x86\)/VstPlugIns
+```
+
+Remember to add this path to Reaper too in preferences so that it knows to look
+here for plugins.
+
+And there we go... again.
+
+
