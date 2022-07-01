@@ -4,6 +4,10 @@ body {
     padding: 25px;
 }
 
+header {
+    margin-bottom: 25px;
+}
+
 img {
     max-width: 100%;
 }
