@@ -1,12 +1,12 @@
 ---
-layout: home
+layout: default
 ---
 
-<div class="text">
+<div>
     {% for post in site.posts %}
-    <div class="article">
+    <div>
         <a href="{{ post.url }}">{{ post.title }}</a> 
-        <span class="article-information">
+        <span>
             <small>{{ post.date | date_to_string }}</small>
         </span>
     </div>
