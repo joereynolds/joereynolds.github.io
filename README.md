@@ -2,8 +2,10 @@
 
 The source for joereynoldsaudio.com
 
-To start it locally, do the following:
+To start it locally, use the Jekyll docker containers:
 
 ```
-bundle exec jekyll serve
+docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
+
+It's then available on localhost port 4000.
