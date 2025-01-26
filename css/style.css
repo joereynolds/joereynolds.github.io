@@ -1,0 +1,28 @@
+html {
+    background: #ffe7e7;
+}
+
+body {
+    max-width: 500px;
+    padding: 25px;
+    margin: auto;
+    background: white;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+
+a {
+    text-decoration: none;
+    color: #e91e63;
+}
