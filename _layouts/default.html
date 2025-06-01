@@ -1,7 +1,33 @@
-{% include head.html %}
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFERQHE6VX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-<main>
-    {{ content }}
-</main>
+          gtag('config', 'G-JFERQHE6VX');
+        </script>
+        <title>Joe Reynolds</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
 
+    <body>
+        <header style="margin-bottom: 30px;">
+            <a href="/">Articles</a>
+            <a href="https://github.com/joereynolds" target="_blank">Github</a>
+            <a href="https://x.com/goodgamefactory">X</a>
+            <a href="https://discord.com/invite/KndkA3BGXv">Discord</a>
+            <a href="https://www.reddit.com/user/mr-figs/">Reddit</a>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+
+    </body>
+</html>
