@@ -12,9 +12,12 @@ else made it instead (spoiler, they hadn't. At least not my vision).
 
 The game would be a topdown Bomberman dungeon crawler.
 
+Nothing groundbreaking but I always thought the bombs in bomberman were neat
+and nobody ever seemed to take it anywhere sadly
+
 A quick in-out mission. 50 levels, all short, no frills, simple.
 
-Narrator: "It was in fact not simple"
+[Rick and morty image here]
 
 Fast-forward 5 years and we have:
 
@@ -47,15 +50,22 @@ We start with the big guns. This is the core of your game and here are some
 lessons I learnt along the way which perhaps would've been more useful at the
 start.
 
-- Add visual debugging as early as possible. Code is harder to debug than
-  something that's visually wrong
+- Add visual debugging as early as possible.
+    - It's much easier to _see_ why something is going wrong versus reading it
+      in the code. A small line that displays an enemies line of sight is
+      invaluable whilst debugging
 
 - A feature sometimes needs to be fleshed out to test
     - You might have an idea for an enemy in your game. To save time, you don't
       source any sound fx, or any art. You use squares for now. I did this and
       I found that it really killed the idea dead in its tracks. Sometimes
       (even if it doesn't work), you need to flesh out your idea a lot to see
-      its true potential. Sadly, this also means wasted time sometimes 
+      its true potential. Sadly, this also means wasted time sometimes.
+
+      A good example of this is the butchering mechanic in Stardew Valley. It
+      never becamse a thing because the creator found it a bit too dark in
+      contrast to the rest of the game (show a screenshot of that mechanic
+      here)
 
 - Save your time as much as possible
     - Originally, I intended Mr Figs to be my magnum opus. A complete "me"
@@ -68,14 +78,34 @@ start.
       produce. 
     
 - Components are your friend. DRY
-- Pause things that are out of view...but not all the time 
+    - See how you have 5 different enemies all needing to move?
+    Yeah, just make a `moves` component and then attach it to that entity.
+    Instant reuseability and you can whip up new mechanics much faster
+
+    I do this all over the place. Nothing is a "skeleton" for example, it's all just a bag of components that might look like
+
+    ```
+    # components
+    [
+        Speed,
+        Velocity,
+        Moves,
+        EmitsEventOnSight,
+        ChangesStateOnEvent
+    ]
+    ```
+
 - spatial grids are a relatively easy way to get good performance from
   collisions
+    - Don't go straight for the recursive quad tree (unless you really want
+      to). Do the simplest thing you can to get performance out of your game.
+      Even a level subdivided into even gridded cells works and is incredibly
+      simple
+
 - Object pools are a great way to combat the side effects of Python's GC (show
   picture here)
 - particle pools are an excellent way to get more particles on screen and
   increase performance. Fiddly to set up but great rewards
-
 
 Some more reading material
 
@@ -99,17 +129,21 @@ Some more reading material
 This is probably not a section you'd like to read (especially if you're coming
 from /r/python, sorry) but I did not enjoy my time with Python.
 
-Python was the first language I learned when I started learning to program in 2013 so it has a special place in my heart.
+Python was the first language I learned when I started learning to program in
+2013 so it has a special place in my heart for that reason but it kind of ends
+there.
 
-That said, here are some things I loathe
+I found numerous small but annoying issues with Python while creating Mr Figs:
 
 - Packaging is a complete mess. It's 2025 and only now are they finally talking
   about lock files.
+  - It's only through the wonders of uv that Python is tolerable. Virtual envs are clunky.
 
 - It's bloated.
-    - This is more of a personal rant. I like small and minimal and python is just not that. 
-    I don't need `linear_regression`s, `harmonic_means`,HTTP servers and 456456 different ways to format a string.
-    If I could have told myself to consider Lua, I would have. those guys got it right.
+    - This is more of a personal rant. I like small and minimal and python is
+      just not that. I don't need `linear_regression()`s, `harmonic_means()`,HTTP
+      servers and 456456 different ways to format a string. If I could have
+      told myself to consider Lua, I would have. those guys got it right.
     
 - It's S L O W. Ordinarily not too much of a problem but it's very
   disheartening when I'm having to do particle pools just to get 2000 particles
@@ -124,15 +158,28 @@ That said, with all the terrible performance and strange design decisions, you
 do get some good stuff out of it:
 
 - Itertools is great
+- List comprehensions have always been great
+- There's a tool for everything
+    - Admittedly I'd prefer a smaller stdlib but when I have the choice of
+      writing my own or using theirs. I'm using theirs. It's been optimised and
+      most likely it's written in C
 - Not using datacalsses for speed
 
 ### Pygame
 
 - Use groups where it makes sense to minimise calls to collision methods 
+    - Don't just have a `sprites` group. Why? Because if you add everything
+      into it and you're then checking that group for collisions, you're
+      checking against waaay more than you need to. I didn't do any fancy
+      active/inactive groups but I did split things out into many smaller
+      groups which ended up usually consisting of less than 10 objects per
+      level.
+
+      The game knew how to poll the correct groups depending on the levels too.
+
 - Use libraries. There's nothing available to you out the box so don't make it
   harder on yourself 
     - pygame-text is good for quickly getting text on the screen
-    - pygame-gui is a better longterm solution (although tbh still not amazing)
     - pytmx for parsing tiled map files
     - pyscroll for scrolling maps
 
@@ -151,10 +198,17 @@ any stealth elements and there's certainly no Z-axis, we do 2D here sir.
 
 - Enter the design of the level by answering "What am I trying to teach the
   player?"
+
 - Linear vs Parallel levels
+    - Show an example of a parallel level (third area with tape at beginning)
+    - Show example of linear level (most of the other third area ones)
+
 - Bring in mechanics one at a time, slowly and ramp it up
 - Give the players breaks after lots of intense levels
+
 - Show the problem before the solution
+    - Show example here
+
 - Empty space is a no-no (unless used for effect)
 
 
@@ -207,12 +261,12 @@ Some games I learnt level design from:
 
     However.
 
-    - Steam take their cut - £30000 (£70000 left)
-    - The average refund rate is ~10% so say goodbye to another £10000 (£60000
-      left)
+    - Steam take their cut of 30% - £30000 (£70000 left)
+    - The average refund rate is ~10% so say goodbye to another £10000 (£60000 left)
     - Income and VAT - Variable but let's say £5000 (£55000)
+    - You probably released it at a discounted rate so let's that's another £5000 (£50000)
 
-    You're left with £55k. I've been kind here and not factored in any other
+    You're left with £50k. I've been kind here and not factored in any other
     expenses you may have but what this equates to more-or-less an annual wage
     of a mid/senior-level software developer.
 
