@@ -8,6 +8,12 @@ h1,h2,h3,h4,h5 {
     text-decoration: underline;
 }
 
+hr {
+    border-color: var(--color-primary);
+    border-style: dashed;
+    border-width: 1px;
+}
+
 pre {
     background: var(--color-secondary);
     padding: 10px;
