@@ -1,6 +1,13 @@
+html {
+    background: #e1e1e1;
+}
+
 :root {
     --color-primary: #e91e63;
     --color-secondary: #ffe7e7;
+    --color-border: #b9b9b9;
+    --spacing-md: 10px;
+    --spacing-lg: 25px;
 }
 
 h1,h2,h3,h4,h5 {
@@ -8,15 +15,9 @@ h1,h2,h3,h4,h5 {
     text-decoration: underline;
 }
 
-hr {
-    border-color: var(--color-primary);
-    border-style: dashed;
-    border-width: 1px;
-}
-
 pre {
     background: var(--color-secondary);
-    padding: 10px;
+    padding: var(--spacing-md);
     overflow-x: auto;
 }
 
@@ -28,14 +29,27 @@ body {
     max-width: 500px;
     padding: 25px;
     margin: auto;
-    background: white;
     margin-top: 25px;
     margin-bottom:25px;
 }
 
-header {
+header, footer {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-md);
+}
+
+footer {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
+}
+
+main {
+    margin-bottom: var(--spacing-lg);
 }
 
 ul {
@@ -52,4 +66,8 @@ li {
 a {
     text-decoration: none;
     color: var(--color-primary);
+}
+
+a:hover {
+    text-decoration: underline;
 }
