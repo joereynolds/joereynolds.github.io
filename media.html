@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /media.html
+---
+
+<h1>Media</h1>
+
+<p>I don't have social media so I post my stuff here. Mainly for posterity but you are welcome to click around</p>
+
+<h2>Guitar</h2>
+<div>
+    <ul>
+        {% assign guitar_sorted = site.guitar | sort: 'date' | reverse %}
+        {% for piece in guitar_sorted %}
+        <li>
+            <a href="{{ piece.url }}">{{ piece.title }}</a>
+            <span>
+                <small class="tag">[{{ piece.tag }}]</small>
+                <small>{{ piece.date | date: "%-d %b %Y" }}</small>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

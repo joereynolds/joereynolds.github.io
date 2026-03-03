@@ -26,6 +26,14 @@ plugins:
 
 highlighter: rouge
 
+collections:
+  guitar:
+    output: true
+    permalink: /guitar/:title.html
+  climbing:
+    output: true
+    permalink: /climbing/:title.html
+
 kramdown:
     # Github pages needs to disable highlighting in a different way 
     # according to the internet
