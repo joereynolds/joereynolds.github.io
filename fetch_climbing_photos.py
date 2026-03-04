@@ -103,7 +103,7 @@ def list_media(path):
     """List both photos and videos from a folder"""
     result = dropbox_api_request('files/list_folder', {'path': path})
     
-    photo_extensions = ['.jpg', '.jpeg', '.png', '.gif']
+    photo_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp']
     video_extensions = ['.mp4', '.mov', '.avi', '.mkv', '.webm', '.m4v']
     
     photos = []
