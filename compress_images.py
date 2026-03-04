@@ -6,7 +6,7 @@ from PIL import Image
 
 # Configuration
 THUMBNAIL_SIZE = (156, 156)
-COMPRESSION_QUALITY = 85  # JPEG quality (1-100, higher is better)
+COMPRESSION_QUALITY = 85  # WebP quality (1-100, higher is better)
 MAX_COMPRESSED_WIDTH = 1920  # Max width for compressed images
 
 def create_thumbnail(image_path, output_dir):
@@ -41,10 +41,10 @@ def create_thumbnail(image_path, output_dir):
             img_cropped = img.crop(crop_box)
             img_resized = img_cropped.resize(THUMBNAIL_SIZE, Image.Resampling.LANCZOS)
             
-            # Save thumbnail
-            filename = Path(image_path).stem + '_thumb.jpg'
+            # Save thumbnail as WebP
+            filename = Path(image_path).stem + '_thumb.webp'
             output_path = os.path.join(output_dir, filename)
-            img_resized.save(output_path, 'JPEG', quality=90, optimize=True)
+            img_resized.save(output_path, 'WEBP', quality=90, method=6)
             print(f"  Created thumbnail: {filename}")
             return True
     except Exception as e:
@@ -65,10 +65,10 @@ def compress_image(image_path, output_dir):
                 new_height = int(img.size[1] * ratio)
                 img = img.resize((MAX_COMPRESSED_WIDTH, new_height), Image.Resampling.LANCZOS)
             
-            # Save compressed version
-            filename = Path(image_path).stem + '_compressed.jpg'
+            # Save compressed version as WebP
+            filename = Path(image_path).stem + '_compressed.webp'
             output_path = os.path.join(output_dir, filename)
-            img.save(output_path, 'JPEG', quality=COMPRESSION_QUALITY, optimize=True)
+            img.save(output_path, 'WEBP', quality=COMPRESSION_QUALITY, method=6)
             
             # Show compression stats
             original_size = os.path.getsize(image_path) / 1024  # KB

@@ -161,14 +161,14 @@ for climb_name in climbing_folders:
         continue
     
     # Match thumbnails with compressed images by filename
-    # Thumbnails: filename_thumb.jpg, Compressed: filename_compressed.jpg
+    # Thumbnails: filename_thumb.webp, Compressed: filename_compressed.webp
     matched_pairs = []
     
     for thumb in thumbnails:
         thumb_name = thumb['name']
-        # Extract base name (remove _thumb.jpg)
-        if '_thumb' in thumb_name:
-            base_name = thumb_name.replace('_thumb', '_compressed')
+        # Extract base name (remove _thumb.webp)
+        if '_thumb.webp' in thumb_name:
+            base_name = thumb_name.replace('_thumb.webp', '_compressed.webp')
             
             # Find matching compressed image
             for comp in compressed_images:
