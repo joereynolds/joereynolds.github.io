@@ -10,26 +10,41 @@ COMPRESSION_QUALITY = 85  # JPEG quality (1-100, higher is better)
 MAX_COMPRESSED_WIDTH = 1920  # Max width for compressed images
 
 def create_thumbnail(image_path, output_dir):
-    """Create a 156x156 thumbnail of an image"""
+    """Create a 156x156 thumbnail of an image (center crop)"""
     try:
         with Image.open(image_path) as img:
             # Convert to RGB if necessary (handles RGBA, etc.)
             if img.mode not in ('RGB', 'L'):
                 img = img.convert('RGB')
             
-            # Create thumbnail (preserves aspect ratio and fits within box)
-            img.thumbnail(THUMBNAIL_SIZE, Image.Resampling.LANCZOS)
+            # Calculate crop box for center crop
+            width, height = img.size
+            target_width, target_height = THUMBNAIL_SIZE
             
-            # Create a square canvas and paste the thumbnail centered
-            thumb = Image.new('RGB', THUMBNAIL_SIZE, (255, 255, 255))
-            offset = ((THUMBNAIL_SIZE[0] - img.size[0]) // 2, 
-                      (THUMBNAIL_SIZE[1] - img.size[1]) // 2)
-            thumb.paste(img, offset)
+            # Calculate aspect ratios
+            img_aspect = width / height
+            thumb_aspect = target_width / target_height
+            
+            # Determine crop dimensions
+            if img_aspect > thumb_aspect:
+                # Image is wider, crop width
+                new_width = int(height * thumb_aspect)
+                left = (width - new_width) // 2
+                crop_box = (left, 0, left + new_width, height)
+            else:
+                # Image is taller, crop height
+                new_height = int(width / thumb_aspect)
+                top = (height - new_height) // 2
+                crop_box = (0, top, width, top + new_height)
+            
+            # Crop to center and resize to exact thumbnail size
+            img_cropped = img.crop(crop_box)
+            img_resized = img_cropped.resize(THUMBNAIL_SIZE, Image.Resampling.LANCZOS)
             
             # Save thumbnail
             filename = Path(image_path).stem + '_thumb.jpg'
             output_path = os.path.join(output_dir, filename)
-            thumb.save(output_path, 'JPEG', quality=90, optimize=True)
+            img_resized.save(output_path, 'JPEG', quality=90, optimize=True)
             print(f"  Created thumbnail: {filename}")
             return True
     except Exception as e:
