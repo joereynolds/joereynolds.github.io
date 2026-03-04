@@ -22,3 +22,16 @@ permalink: /media.html
         {% endfor %}
     </ul>
 </div>
+
+<h2>Climbing</h2>
+<div>
+    <ul>
+        {% assign climbing_sorted = site.climbing | sort: 'date' | reverse %}
+        {% for climb in climbing_sorted %}
+        <li>
+            <a href="{{ climb.url }}">{{ climb.title }}</a>
+            <small>{{ climb.date | date: "%-d %b %Y" }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
