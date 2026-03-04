@@ -141,49 +141,71 @@ for climb_name in climbing_folders:
     
     print(f"  ✓ Has 'site' directory")
     
-    # Get media from the site subdirectory
+    # Get media from the site/thumbs and site/compressed subdirectories
     site_path = f"{climb_path}/site"
-    photos, videos = list_media(site_path)
+    thumbs_path = f"{site_path}/thumbs"
+    compressed_path = f"{site_path}/compressed"
     
-    print(f"  Found {len(photos)} photo(s) and {len(videos)} video(s) in site directory")
+    # Get thumbnails and compressed images
+    try:
+        thumbnails, _ = list_media(thumbs_path)
+        compressed_images, _ = list_media(compressed_path)
+    except:
+        print(f"  Skipping {climb_name} - missing thumbs/ or compressed/ directories")
+        continue
     
-    if not photos and not videos:
-        print(f"  Skipping {climb_name} - no media in 'site' directory")
+    print(f"  Found {len(thumbnails)} thumbnail(s) and {len(compressed_images)} compressed image(s)")
+    
+    if not thumbnails or not compressed_images:
+        print(f"  Skipping {climb_name} - need both thumbs and compressed directories")
+        continue
+    
+    # Match thumbnails with compressed images by filename
+    # Thumbnails: filename_thumb.jpg, Compressed: filename_compressed.jpg
+    matched_pairs = []
+    
+    for thumb in thumbnails:
+        thumb_name = thumb['name']
+        # Extract base name (remove _thumb.jpg)
+        if '_thumb' in thumb_name:
+            base_name = thumb_name.replace('_thumb', '_compressed')
+            
+            # Find matching compressed image
+            for comp in compressed_images:
+                if comp['name'] == base_name:
+                    matched_pairs.append((thumb, comp))
+                    break
+    
+    print(f"  Matched {len(matched_pairs)} thumbnail/compressed pair(s)")
+    
+    if not matched_pairs:
+        print(f"  Skipping {climb_name} - no matching thumbnail/compressed pairs found")
         continue
     
     # Create filename-safe slug
     slug = re.sub(r'[^a-z0-9]+', '-', climb_name.lower()).strip('-')
     
-    # Create shared links for all photos
-    photo_urls = []
-    for photo in photos:
-        photo_name = photo['name']
-        dropbox_path = photo['path_lower']
-        
-        print(f"  Creating shared link for photo: {photo_name}...")
-        shared_url = create_shared_link(dropbox_path)
-        
-        if shared_url:
-            photo_urls.append(shared_url)
-        else:
-            print(f"  Warning: Skipping {photo_name} (no shared link created)")
+    # Create shared links for thumbnails and compressed images
+    thumbnail_urls = []
+    compressed_urls = []
     
-    # Create shared links for all videos
-    video_urls = []
-    for video in videos:
-        video_name = video['name']
-        dropbox_path = video['path_lower']
+    for thumb, comp in matched_pairs:
+        thumb_name = thumb['name']
+        comp_name = comp['name']
         
-        print(f"  Creating shared link for video: {video_name}...")
-        shared_url = create_shared_link(dropbox_path)
+        print(f"  Creating shared links for: {thumb_name} / {comp_name}...")
         
-        if shared_url:
-            video_urls.append(shared_url)
+        thumb_url = create_shared_link(thumb['path_lower'])
+        comp_url = create_shared_link(comp['path_lower'])
+        
+        if thumb_url and comp_url:
+            thumbnail_urls.append(thumb_url)
+            compressed_urls.append(comp_url)
         else:
-            print(f"  Warning: Skipping {video_name} (no shared link created)")
+            print(f"  Warning: Skipping pair (could not create shared links)")
     
-    if not photo_urls and not video_urls:
-        print(f"  Skipping {climb_name} - no media could be shared")
+    if not thumbnail_urls or not compressed_urls:
+        print(f"  Skipping {climb_name} - no image pairs could be shared")
         continue
     
     # Create markdown file in _climbing
@@ -196,21 +218,19 @@ for climb_name in climbing_folders:
         f.write(f"date: {date.today()}\n")
         f.write(f"permalink: /climbing/{slug}.html\n")
         
-        if photo_urls:
-            f.write("photos:\n")
-            for url in photo_urls:
-                f.write(f"  - {url}\n")
+        f.write("thumbnails:\n")
+        for url in thumbnail_urls:
+            f.write(f"  - {url}\n")
         
-        if video_urls:
-            f.write("videos:\n")
-            for url in video_urls:
-                f.write(f"  - {url}\n")
+        f.write("compressed:\n")
+        for url in compressed_urls:
+            f.write(f"  - {url}\n")
         
         f.write("---\n")
         f.write("\n")
         f.write(f"Photos from {climb_name}.\n")
     
     print(f"  Created: {filename}")
-    print(f"  Generated {len(photo_urls)} photo link(s) and {len(video_urls)} video link(s)")
+    print(f"  Generated {len(thumbnail_urls)} thumbnail/compressed pair(s)")
 
 print(f"\nDone! Generated climbing pages with shared Dropbox links")

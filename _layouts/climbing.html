@@ -6,11 +6,11 @@ layout: default
 
 {{ content }}
 
-{% if page.photos %}
+{% if page.thumbnails %}
 <div class="climbing-gallery">
-  {% for photo_url in page.photos %}
-    <a href="{{ photo_url }}" class="climbing-photo" onclick="openModal({{ forloop.index0 }}); return false;">
-      <img src="{{ photo_url }}" alt="{{ page.title }}" loading="lazy">
+  {% for thumbnail_url in page.thumbnails %}
+    <a href="#" class="climbing-photo" onclick="openModal({{ forloop.index0 }}); return false;">
+      <img src="{{ thumbnail_url }}" alt="{{ page.title }}" loading="lazy">
     </a>
   {% endfor %}
 </div>
@@ -148,9 +148,9 @@ layout: default
 </style>
 
 <script>
-var photoUrls = [
-  {% for photo_url in page.photos %}
-    "{{ photo_url }}"{% unless forloop.last %},{% endunless %}
+var compressedUrls = [
+  {% for compressed_url in page.compressed %}
+    "{{ compressed_url }}"{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ];
 
@@ -161,7 +161,7 @@ function openModal(index) {
   var modal = document.getElementById('imageModal');
   var modalImg = document.getElementById('modalImage');
   modal.style.display = 'block';
-  modalImg.src = photoUrls[currentImageIndex];
+  modalImg.src = compressedUrls[currentImageIndex];
 }
 
 function closeModal(event) {
@@ -175,14 +175,14 @@ function changeImage(direction) {
   currentImageIndex += direction;
   
   // Wrap around
-  if (currentImageIndex >= photoUrls.length) {
+  if (currentImageIndex >= compressedUrls.length) {
     currentImageIndex = 0;
   } else if (currentImageIndex < 0) {
-    currentImageIndex = photoUrls.length - 1;
+    currentImageIndex = compressedUrls.length - 1;
   }
   
   var modalImg = document.getElementById('modalImage');
-  modalImg.src = photoUrls[currentImageIndex];
+  modalImg.src = compressedUrls[currentImageIndex];
 }
 
 // Close modal on ESC key, navigate with arrow keys
