@@ -15,4 +15,11 @@ compressed:
   - https://www.dropbox.com/scl/fi/61uf9x33b7nrzbs9df3ln/2025-08-10-15.35.42_compressed.jpg?rlkey=gaf6pknq5tkos8h707b1mi4ji&raw=1
 ---
 
-Photos from dartmoor-2025.
+On the way back from Cornwall we stopped off at Dartmoor. There's easily a few
+days worth of bouldering here.
+
+It was a bit too hot when we went and I was burning to a crisp so we didn't
+stay for ages.
+
+There was a nice easy crack climb (not pictured) and also a still sort of easy
+(pictured) boulder too.
