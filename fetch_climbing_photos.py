@@ -3,6 +3,7 @@ import os
 import json
 import requests
 from datetime import date
+from pathlib import Path
 import re
 
 DROPBOX_ACCESS_TOKEN = os.environ.get('DROPBOX_ACCESS_TOKEN')
@@ -20,6 +21,10 @@ if not DROPBOX_ACCESS_TOKEN:
     print("Run: export DROPBOX_ACCESS_TOKEN='your_token'")
     print("Or create a .dropbox_token file with your token")
     exit(1)
+
+# Image storage directory
+IMAGES_DIR = Path('images/climbing')
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
 def dropbox_api_request(endpoint, data=None, exit_on_error=True):
     url = f"https://api.dropboxapi.com/2/{endpoint}"
@@ -46,6 +51,30 @@ def dropbox_api_request(endpoint, data=None, exit_on_error=True):
             exit(1)
         else:
             raise
+
+def download_file(dropbox_path, local_path):
+    """Download a file from Dropbox to local filesystem"""
+    url = "https://content.dropboxapi.com/2/files/download"
+    headers = {
+        'Authorization': f'Bearer {DROPBOX_ACCESS_TOKEN}',
+        'Dropbox-API-Arg': json.dumps({'path': dropbox_path})
+    }
+    
+    try:
+        response = requests.post(url, headers=headers, timeout=30)
+        
+        if response.status_code != 200:
+            print(f"  Warning: Could not download {dropbox_path}: {response.status_code}")
+            return False
+        
+        # Write file to disk
+        with open(local_path, 'wb') as f:
+            f.write(response.content)
+        
+        return True
+    except Exception as e:
+        print(f"  Warning: Error downloading {dropbox_path}: {e}")
+        return False
 
 def create_shared_link(path):
     """Create or get a permanent shared link for a file"""
@@ -185,27 +214,43 @@ for climb_name in climbing_folders:
     # Create filename-safe slug
     slug = re.sub(r'[^a-z0-9]+', '-', climb_name.lower()).strip('-')
     
-    # Create shared links for thumbnails and compressed images
-    thumbnail_urls = []
-    compressed_urls = []
+    # Create climb-specific directory
+    climb_dir = IMAGES_DIR / slug
+    climb_dir.mkdir(exist_ok=True)
+    thumbs_dir = climb_dir / 'thumbs'
+    compressed_dir = climb_dir / 'compressed'
+    thumbs_dir.mkdir(exist_ok=True)
+    compressed_dir.mkdir(exist_ok=True)
+    
+    # Download thumbnails and compressed images
+    thumbnail_paths = []
+    compressed_paths = []
     
     for thumb, comp in matched_pairs:
         thumb_name = thumb['name']
         comp_name = comp['name']
         
-        print(f"  Creating shared links for: {thumb_name} / {comp_name}...")
+        print(f"  Downloading: {thumb_name} / {comp_name}...")
         
-        thumb_url = create_shared_link(thumb['path_lower'])
-        comp_url = create_shared_link(comp['path_lower'])
-        
-        if thumb_url and comp_url:
-            thumbnail_urls.append(thumb_url)
-            compressed_urls.append(comp_url)
+        # Download thumbnail
+        thumb_local_path = thumbs_dir / thumb_name
+        if download_file(thumb['path_lower'], thumb_local_path):
+            # Store relative path for use in markdown
+            thumbnail_paths.append(f"/images/climbing/{slug}/thumbs/{thumb_name}")
         else:
-            print(f"  Warning: Skipping pair (could not create shared links)")
+            print(f"  Warning: Skipping pair (could not download thumbnail)")
+            continue
+        
+        # Download compressed image
+        comp_local_path = compressed_dir / comp_name
+        if download_file(comp['path_lower'], comp_local_path):
+            compressed_paths.append(f"/images/climbing/{slug}/compressed/{comp_name}")
+        else:
+            print(f"  Warning: Skipping pair (could not download compressed image)")
+            continue
     
-    if not thumbnail_urls or not compressed_urls:
-        print(f"  Skipping {climb_name} - no image pairs could be shared")
+    if not thumbnail_paths or not compressed_paths:
+        print(f"  Skipping {climb_name} - no image pairs could be downloaded")
         continue
     
     # Create markdown file in _climbing
@@ -219,18 +264,18 @@ for climb_name in climbing_folders:
         f.write(f"permalink: /climbing/{slug}.html\n")
         
         f.write("thumbnails:\n")
-        for url in thumbnail_urls:
-            f.write(f"  - {url}\n")
+        for path in thumbnail_paths:
+            f.write(f"  - {path}\n")
         
         f.write("compressed:\n")
-        for url in compressed_urls:
-            f.write(f"  - {url}\n")
+        for path in compressed_paths:
+            f.write(f"  - {path}\n")
         
         f.write("---\n")
         f.write("\n")
         f.write(f"Photos from {climb_name}.\n")
     
     print(f"  Created: {filename}")
-    print(f"  Generated {len(thumbnail_urls)} thumbnail/compressed pair(s)")
+    print(f"  Downloaded {len(thumbnail_paths)} thumbnail/compressed pair(s)")
 
-print(f"\nDone! Generated climbing pages with shared Dropbox links")
+print(f"\nDone! Generated climbing pages with local images")
