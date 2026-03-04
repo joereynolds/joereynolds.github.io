@@ -6,7 +6,7 @@ from PIL import Image
 
 # Configuration
 THUMBNAIL_SIZE = (156, 156)
-COMPRESSION_QUALITY = 85  # WebP quality (1-100, higher is better)
+COMPRESSION_QUALITY = 40  # WebP quality (1-100, higher is better)
 MAX_COMPRESSED_WIDTH = 1920  # Max width for compressed images
 
 def create_thumbnail(image_path, output_dir):
