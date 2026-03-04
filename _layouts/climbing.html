@@ -160,15 +160,22 @@ function openModal(index) {
   currentImageIndex = index;
   var modal = document.getElementById('imageModal');
   var modalImg = document.getElementById('modalImage');
-  modal.style.display = 'block';
+  
+  // Set the image source first, then display the modal
   modalImg.src = compressedUrls[currentImageIndex];
+  modal.style.display = 'block';
 }
 
 function closeModal(event) {
   if (event) {
     event.stopPropagation();
   }
-  document.getElementById('imageModal').style.display = 'none';
+  var modal = document.getElementById('imageModal');
+  var modalImg = document.getElementById('modalImage');
+  
+  modal.style.display = 'none';
+  // Clear the image source to prevent showing stale images
+  modalImg.src = '';
 }
 
 function changeImage(direction) {
