@@ -1,6 +1,6 @@
 # joereynolds.github.io
 
-The source for joereynoldsaudio.com
+The source for joereynolds.uk
 
 To start it locally, use the Jekyll docker containers:
 
