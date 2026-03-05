@@ -28,5 +28,3 @@ The process is
     generate thumbnails
 - Trigger the workflow
   - This will pull down all thumbnails and compressed images into here
-
-Images are populated via my Dropbox. Create a "site" directory for any climbing stuff and then run the compress images script to compress and create thumbnails. Then, run the fetch images script to populate the site with them.
