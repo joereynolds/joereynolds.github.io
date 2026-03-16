@@ -35,3 +35,19 @@ permalink: /media.html
         {% endfor %}
     </ul>
 </div>
+
+<h2>Books</h2>
+<div>
+    <ul>
+        {% assign books_sorted = site.books | sort: 'date' | reverse %}
+        {% for book in books_sorted %}
+        <li>
+            <a href="{{ book.url }}">{{ book.author }} - {{ book.title }}</a>
+            <span>
+                <small>{{ book.rating }}/5</small>
+                <small>({{ book.date | date: "%Y" }})</small>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

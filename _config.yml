@@ -33,6 +33,9 @@ collections:
   climbing:
     output: true
     permalink: /climbing/:title.html
+  books:
+    output: true
+    permalink: /books/:title.html
 
 kramdown:
     # Github pages needs to disable highlighting in a different way 
