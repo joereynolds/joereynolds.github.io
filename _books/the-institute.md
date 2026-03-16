@@ -6,6 +6,5 @@ rating: 3.5
 date: 2020-01-01
 permalink: /books/the-institute.html
 image: https://covers.openlibrary.org/b/id/10712767-M.jpg
-thumbnail: https://covers.openlibrary.org/b/id/10712767-S.jpg
 ---
 

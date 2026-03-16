@@ -6,6 +6,5 @@ rating: 4.5
 date: 2024-01-01
 permalink: /books/misery.html
 image: https://covers.openlibrary.org/b/id/8259296-M.jpg
-thumbnail: https://covers.openlibrary.org/b/id/8259296-S.jpg
 ---
 

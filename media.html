@@ -54,9 +54,7 @@ permalink: /media.html
         {% assign books_sorted = site.books | sort: 'date' | reverse %}
         {% for book in books_sorted %}
         <li>
-            <a href="{{ book.url }}">
-                {% if book.thumbnail %}<img src="{{ book.thumbnail }}" alt="{{ book.title }}" style="max-width: 40px; width: auto; vertical-align: middle; margin-right: 8px;">{% endif %}{{ book.author }} - {{ book.title }}
-            </a>
+            <a href="{{ book.url }}">{{ book.author }} - {{ book.title }}</a>
             <span>
                 <small>{{ book.rating }}/5</small>
                 <small>({{ book.date | date: "%Y" }})</small>

@@ -6,6 +6,5 @@ rating: 5
 date: 2023-01-01
 permalink: /books/the-woman-in-the-dunes.html
 image: https://covers.openlibrary.org/b/id/10836985-M.jpg
-thumbnail: https://covers.openlibrary.org/b/id/10836985-S.jpg
 ---
 
