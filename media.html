@@ -5,9 +5,15 @@ permalink: /media.html
 
 <h1>Media</h1>
 
-<p>I don't have social media so I post my stuff here. Mainly for posterity but you are welcome to click around</p>
+<p>
+    I don't have social media so I post my stuff here. Mainly for posterity but
+    you are welcome to click around
+</p>
 
 <h2>Guitar</h2>
+<p>
+    The acoustic stuff is more interesting than electric so I'd start there.
+</p>
 <div>
     <ul>
         {% assign guitar_sorted = site.guitar | sort: 'date' | reverse %}
@@ -24,6 +30,9 @@ permalink: /media.html
 </div>
 
 <h2>Climbing</h2>
+<p>
+    Various climbs I've been on. My memory is awful so I kind of need this.
+</p>
 <div>
     <ul>
         {% assign climbing_sorted = site.climbing | sort: 'date' | reverse %}
@@ -37,12 +46,17 @@ permalink: /media.html
 </div>
 
 <h2>Books</h2>
+<p>
+    Books I've read. Because, why not?
+</p>
 <div>
     <ul>
         {% assign books_sorted = site.books | sort: 'date' | reverse %}
         {% for book in books_sorted %}
         <li>
-            <a href="{{ book.url }}">{{ book.author }} - {{ book.title }}</a>
+            <a href="{{ book.url }}">
+                {% if book.thumbnail %}<img src="{{ book.thumbnail }}" alt="{{ book.title }}" style="max-width: 40px; width: auto; vertical-align: middle; margin-right: 8px;">{% endif %}{{ book.author }} - {{ book.title }}
+            </a>
             <span>
                 <small>{{ book.rating }}/5</small>
                 <small>({{ book.date | date: "%Y" }})</small>

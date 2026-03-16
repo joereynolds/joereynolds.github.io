@@ -5,5 +5,7 @@ author: "Stephen King"
 rating: 5
 date: 2024-01-01
 permalink: /books/on-writing.html
+image: https://covers.openlibrary.org/b/id/9255939-M.jpg
+thumbnail: https://covers.openlibrary.org/b/id/9255939-S.jpg
 ---
 

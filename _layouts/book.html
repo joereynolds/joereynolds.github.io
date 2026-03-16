@@ -2,7 +2,14 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p><small>{{ page.author }} | {{ page.rating }}/5 | ({{ page.date | date: "%Y" }})</small></p>
+<div style="text-align: center;">
+    <h1>{{ page.title }}</h1>
+
+    {% if page.image %}
+    <img src="{{ page.image }}" alt="{{ page.title }}" style="max-width: 200px; width: auto;">
+    {% endif %}
+</div>
 
 {{ content }}
+
+<p><small>{{ page.author }} | {{ page.rating }}/5 | ({{ page.date | date: "%Y" }})</small></p>
