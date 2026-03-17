@@ -76,3 +76,24 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.footnotes {
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    font-size: 0.85em;
+    color: #555;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+}
+
+.footnotes li {
+    display: list-item;
+    margin-bottom: 5px;
+}
+
+.footnotes p {
+    margin: 0;
+}
