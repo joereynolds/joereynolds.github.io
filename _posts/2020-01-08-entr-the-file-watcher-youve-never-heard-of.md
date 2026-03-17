@@ -55,5 +55,5 @@ If this is you (it's definitely me), then you probably want
 [entree](https://github.com/joereynolds/entree). A version controllable wrapper
 for entr that also aliases watchers. I created it a while back to scratch the
 itch I just described. I [wrote about it
-too](https://joereynoldsaudio.com/2018/06/17/entree.html). You should use it. It
+too](linux/2018/06/17/entree.html). You should use it. It
 has tab completion.
