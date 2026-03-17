@@ -28,5 +28,5 @@ Oh and yes, there's an orgy with kids in it, get over it.
 [^1]: In my opinion Stranger Things started declining pretty rapidly after the
     second season. No idea why but it went from a gripping drama/thriller to a weird
     American-ized tween drama which leaned too heavily into displaying Eleven's powers (we
-    get it, she's telepathic) and really milking the synth vibes (Yes everyone wants and loves
+    get it, she's telekinetic) and really milking the synth vibes (Yes everyone wants and loves
     the ARP 2600).
