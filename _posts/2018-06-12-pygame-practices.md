@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2018/06/12/pygame-practices.html
+archived: true
 ---
 
 ## Intro

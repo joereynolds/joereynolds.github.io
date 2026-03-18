@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2019/12/04/the-sounds-of-pi.html
+archived: true
 ---
 
 # The sounds of Pi

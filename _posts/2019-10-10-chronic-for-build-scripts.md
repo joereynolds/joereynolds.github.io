@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /linux/2019/10/10/chronic-for-build-scripts.html
+archived: true
 ---
 
 # Chronic for build scripts

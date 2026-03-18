@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2018/06/12/wordlists.html
+archived: true
 ---
 
 #### [animals.txt](/assets/data/animals.txt)

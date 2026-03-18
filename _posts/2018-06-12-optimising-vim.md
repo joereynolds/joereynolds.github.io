@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /vim/2018/06/12/optimising-vim.html
+archived: true
 ---
 
 Sometimes Vim can slow down when you start to push it to being something more than just a text editor.

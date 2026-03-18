@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2016/01/13/scheme-ramblings-2.html
+archived: true
 ---
 
 last week involved a simple daily programmer challenge that asked for

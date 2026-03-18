@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2018/06/12/minorisation.html
+archived: true
 ---
 
 Minorisation is the idea that any key (major,minor or otherwise) can be 'converted to minor'.

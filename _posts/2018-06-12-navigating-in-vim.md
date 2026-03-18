@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /vim/2018/06/12/navigating-in-vim.html
+archived: true
 ---
 
 I use these to navigate huge codebases (1m+ lines)

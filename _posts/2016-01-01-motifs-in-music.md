@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2016/01/01/motifs-in-music.html
+archived: true
 ---
 
 A rarely untouched beast, motif cycling is occasionally heard in classical music and is mostly present during the time a modulation occurs.

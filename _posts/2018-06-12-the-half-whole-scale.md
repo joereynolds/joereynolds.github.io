@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2018/06/12/the-half-whole-scale.html
+archived: true
 ---
 
 The half-whole scale is perhaps one of my favourite scales for a few reasons.

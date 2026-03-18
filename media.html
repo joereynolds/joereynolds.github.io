@@ -63,3 +63,19 @@ permalink: /media.html
         {% endfor %}
     </ul>
 </div>
+
+<h2>Archived Posts</h2>
+<p>
+    Old posts from the early days. Outdated and of questionable quality, but kept here for historical purposes.
+</p>
+<div>
+    <ul>
+        {% assign archived_posts = site.posts | where: "archived", true | sort: 'date' | reverse %}
+        {% for post in archived_posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <small>{{ post.date | date: "%-d %b %Y" }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

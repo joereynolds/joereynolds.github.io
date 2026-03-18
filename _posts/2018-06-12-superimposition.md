@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2018/06/12/superimposition.html
+archived: true
 ---
 
 Superimposition is the process of layering one tonality on top of another to suggest an entirely different tonality. 

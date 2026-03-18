@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2025/10/02/python-and-pygame-performance-dump.html
+archived: true
 ---
 
 # Python/Pygame performance dump

@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2018/06/12/10-minutes-with-k.html
+archived: true
 ---
 
 # What is K/Kona?

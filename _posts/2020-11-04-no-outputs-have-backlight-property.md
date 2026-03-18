@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /linux/2020/11/04/no-outputs-have-backlight-property.html
+archived: true
 ---
 
 So, when I run `xbacklight` locally with i3 as my window manager, I get:

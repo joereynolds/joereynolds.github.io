@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2018/06/12/dominant-and-diminished-chords.html
+archived: true
 ---
 
 Dominant and diminished chords are a special bunch. They share so many similarities that are not immediately obvious and allow for very swift modulation. 

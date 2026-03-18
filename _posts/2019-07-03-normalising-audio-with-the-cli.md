@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /linux/2019/07/03/normalising-audio-with-the-cli.html
+archived: true
 ---
 
 # Normalising audio with the CLI

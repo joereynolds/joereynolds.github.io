@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2016/01/20/scheme-ramblings-3.html
+archived: true
 ---
 
 I took a short break from challenges this week as I for some reason got roped

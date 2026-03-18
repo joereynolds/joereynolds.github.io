@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2018/06/12/significant-notes.html
+archived: true
 ---
 
 The purpose of this article is to make you aware of what notes to omit from a chord if needed and how to tell what chord/scale is best suited over what harmony.

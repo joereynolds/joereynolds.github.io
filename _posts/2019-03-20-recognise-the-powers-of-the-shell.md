@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /linux/2019/03/20/recognise-the-powers-of-the-shell.html
+archived: true
 ---
 
 # Recognise the powers of the shell

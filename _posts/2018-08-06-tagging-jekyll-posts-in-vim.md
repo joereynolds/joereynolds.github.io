@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /vim/2018/08/06/tagging-jekyll-posts-in-vim.html
+archived: true
 ---
 
 # Tagging Jekyll posts with Vim

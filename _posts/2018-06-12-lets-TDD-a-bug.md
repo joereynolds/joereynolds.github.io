@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2018/06/12/lets-TDD-a-bug.html
+archived: true
 ---
 
 # TDD'ing bugs

@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2016/01/06/scheme-ramblings-1.html
+archived: true
 ---
 
 So I've just completed the first challenge from dailyprogrammer. It's a pretty

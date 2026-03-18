@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2021/03/01/order-your-ifs-correctly.html
+archived: true
 ---
 
 # Order your ifs correctly

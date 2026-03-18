@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2019/06/05/better-error-messages-for-everyone.html
+archived: true
 ---
 
 # Better error messages for everyone

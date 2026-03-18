@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2016/01/27/scheme-ramblings-4.html
+archived: true
 ---
 
 Long time no see!  I've entirely moved on from vanilla R5RS over to Chicken

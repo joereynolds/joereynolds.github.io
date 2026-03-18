@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /programming/2018/06/12/maintainble-css.html
+archived: true
 ---
 
 This article will glance over various ways of creating a design that you don't (or shouldn't) have to keep coming back to again and again to fix layout issues. 

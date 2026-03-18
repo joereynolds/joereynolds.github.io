@@ -1,6 +1,7 @@
 --- 
 layout: default 
 tags: [music, programming]
+archived: true
 ---
 
 # \#3

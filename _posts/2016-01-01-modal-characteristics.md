@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /music/2016/01/01/modal-characteristics.html
+archived: true
 ---
 
 Ionian, Dorian, Phrygian and more are all modes. But what makes each mode
