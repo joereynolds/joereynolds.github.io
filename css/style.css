@@ -29,6 +29,7 @@ img {
 code {
     background: var(--color-secondary);
     padding: var(--spacing-sm);
+    line-height: 2;
 }
 
 body {
