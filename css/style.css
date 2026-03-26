@@ -6,6 +6,7 @@ html {
     --color-primary: #e91e63;
     --color-secondary: #ffe7e7;
     --color-border: #b9b9b9;
+    --spacing-sm: 5px;
     --spacing-md: 10px;
     --spacing-lg: 25px;
 }
@@ -27,6 +28,7 @@ img {
 
 code {
     background: var(--color-secondary);
+    padding: var(--spacing-sm);
 }
 
 body {
