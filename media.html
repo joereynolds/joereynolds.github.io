@@ -45,6 +45,25 @@ permalink: /media.html
     </ul>
 </div>
 
+<h2>Books</h2>
+<p>
+    Books I've read. Because, why not?
+</p>
+<div>
+    <ul>
+        {% assign books_sorted = site.books | sort: 'date' | reverse %}
+        {% for book in books_sorted %}
+        <li>
+            <a href="{{ book.url }}">{{ book.author }} - {{ book.title }}</a>
+            <span>
+                <small>{{ book.rating }}/5</small>
+                <small>({{ book.date | date: "%Y" }})</small>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
 <h2>Archived Posts</h2>
 <p>
     Old posts from the early days. Outdated and of questionable quality, but kept here for historical purposes.
