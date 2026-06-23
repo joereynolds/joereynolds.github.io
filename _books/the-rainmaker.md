@@ -3,7 +3,7 @@ layout: book
 title: "The Rainmaker"
 author: "John Grisham"
 rating: 4.5
-date: 2024-01-01
+date: 2026-06-19
 permalink: /books/the-rainmaker.html
 image: https://covers.openlibrary.org/b/id/8259296-M.jpg
 ---
